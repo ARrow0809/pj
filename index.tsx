@@ -1,4 +1,5 @@
 
+import dataUrl from './all-in-one-data.txt?url';
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
 const API_KEY = process.env.API_KEY;
