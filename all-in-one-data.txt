@@ -1,0 +1,2279 @@
+人物:
+  キャラクター:
+    - 女の子: girl
+    - 男の子: boy
+    - 小さな女の子: little_girl
+    - 小さな男の子: little_boy
+    - ショタ: shota #SENSITIVE
+    - ロリ: loli #SENSITIVE
+    - 可愛い: kawaii
+    - メスガキ: mesugaki #SENSITIVE
+    - 可愛い女の子: adorable_girl
+    - 美少女: bishoujo
+    - ギャル: gyaru
+    - 姉妹: sisters
+    - お嬢様: ojousama
+    - 女性: female
+    - 成熟した女性: mature_female
+    - 成熟した: mature
+    - 痴女: female_perv #SENSITIVE
+    - 男性: male
+    - 熟女: milf #SENSITIVE
+    - 男の娘: otoko_no_ko #SENSITIVE
+    - 女装: crossdressing
+
+  身分:
+    - ライフセーバー: lifeguard
+    - ボクサー: boxer
+    - 科学者: scientist
+    - アスリート: athlete # singular, "athletes" is plural
+    - オフィスレディ: office_lady # "office lady" also used
+    - 修道士: monk
+    - 曲芸師: acrobat # "crobat" is a Pokemon
+    - 修道女: nun
+    - 看護師: nurse
+    - スチュワーデス: stewardess
+    - 学生: student
+    - ウェイトレス: waitress
+    - 教師: teacher
+    - レーサー: racer
+    - 警察官: police_officer # "police" is the organization
+    - 兵士: soldier
+    - チアリーダー: cheerleader
+    - 俳優: actor
+    - 女優: actress
+    - スパイ: spy
+    - エージェント: agent
+    - 暗殺者: assassin
+    - 詩人: poet
+    - 侍: samurai
+    - ダンスガール: dancing_girl
+    - モーターサイクリスト: motorcyclist
+    - ハッカー: hacker
+    - 魔術師: magician
+    - 探偵: detective
+    - 人形: doll
+    - メイド: maid
+    - パイロット: pilot
+    - ダイバー: diver
+    - バーテンダー: bartender # "bar censor" is incorrect
+    - 宣教師: missionary
+    - 消防士: firefighter
+    - ゴールキーパー: goalkeeper
+    - シェフ: chef
+    - 宇宙飛行士: astronaut
+    - レジ係: cashier
+    - 郵便配達員: mailman
+    - バリスタ: barista
+    - 隠者: hermit
+    - 牧羊人: shepherd
+    - オフィスレディ: office_lady (duplicate)
+    - レースクイーン: race_queen
+    - 女王: queen
+    - 医師: doctor
+    - 騎士: knight
+    - メイド: housemaid (maid is more common)
+    - ダンサー: dancer
+    - バレリーナ: ballerina
+    - ジムリーダー: gym_leader # Pokemon reference
+    - ハーレム: harem #SENSITIVE
+    - アイドル: idol
+    - 司祭: priest
+    - 聖職者（キリスト教）: cleric
+    - 和風メイド: wa_maid
+    - ヤオイ: yaoi #SENSITIVE
+    - 百合: yuri #SENSITIVE
+
+  年齢:
+    - 幼児: toddler
+    - 幼稚園児: kindergartner
+    - 子供: child
+    - 未成年: underage #SENSITIVE
+    - 10代: teenager # "teen" also used
+    - 10代: teen
+    - 10代前半（11-13歳）: early_teen
+    - 大人: adult
+    - 年配者: elder
+    - 高齢者: old
+
+  皮膚:
+    - 白い肌: white_skin
+    - 青白いな肌: pale_skin
+    - 良い肌: fair_skin
+    - 茶色の肌: brown_skin
+    - 濃い肌: deep_skin
+    - 黒い肌: dark_skin
+    - 黒い肌: black_skin
+    - 輝く肌: shiny_skin
+    - 白い大理石の薄い肌: glossy_white_marble_skin
+    - 入れ墨: tattoo
+    - 日焼け: tan
+    - 日焼け痕: tanlines
+    - オイリー: oily
+
+  体型:
+    - スリム: skinny
+    - ふっくら: plump
+    - 曲線美のある体型: curvy
+    - 妊娠中: pregnant
+    - 太っている: fat
+    - 細い: thin
+    - すらりとした: slender
+    - 魅力的な: glamor 
+    - 背が高い: tall
+    - 小柄: petite
+    - ちび: chibi
+    - 筋肉質: muscular
+
+  顔の形:
+    - 細い顔: slender_face
+    - 丸顔: round_face
+    - 卵型の顔: oval_face
+    - 赤ちゃんの顔: baby_face
+    - 逆三角形の顔: inverted_triangle_face
+    - ハート型の顔: heart-shaped_face
+    - ダイヤモンド型の顔: diamond_face
+    - 四角い顔: square_face
+    - 長い顔: long_face
+    - 三角形の顔: triangular_face
+
+  髪の毛:
+    - 白髪: white_hair
+    - 金髪: blonde_hair
+    - 銀髪: silver_hair
+    - 灰色の髪: grey_hair
+    - 紫髪: purple_hair
+    - 赤髪: red_hair
+    - 黄色の髪: yellow_hair
+    - 緑髪: green_hair
+    - 青髪: blue_hair
+    - 黒髪: black_hair
+    - 茶髪: brown_hair
+    - ストレートヘア: straight_hair
+    - ショートヘア: short_hair
+    - カールヘア: curly_hair
+    - ロングヘア: long_hair
+    - ポニーテール: ponytail
+    - おさげ: pigtails
+    - ストリーク入り髪: streaked_hair
+    - グレーグラデーション髪: grey_gradient_hair
+    - 明るい茶髪: light_brown_hair
+    - 2色の髪: two-tone_hair
+    - 多色の髪: multicolored_hair
+    - ハイポニーテール: high_ponytail
+    - ツインテール: twintails
+    - 結び目のあるポニーテール: braided_ponytail
+    - ポニーテール: ponytail (duplicate)
+    - ショートポニーテール: short_ponytail
+    - ツインブレード: twin_braids 
+    - ミディアムヘア: medium_hair
+    - 非常に長い髪: very_long_hair
+    - 編み込みバング: braided_bangs
+    - サイドバング: swept_bangs
+    - 目の間の髪: hair_between_eyes
+    - ボブカット: bob_cut
+    - 姫カット: hime_cut
+    - クロスバング: crossed_bangs
+    - バング: bangs
+    - ブラントバング: blunt_bangs
+    - エアバング: air_bangs
+    - 髪の翼: hair_wings
+    - 長い前髪: long_bangs
+    - サイドブラントバング: side_blunt_bangs
+    - センターパーティングバング: center_parting_bangs
+    - アシンメトリーバング: asymmetric_bangs
+    - 乱れた髪: disheveled_hair
+    - ウェーブヘア: wavy_hair
+    - 髪を束ねる: hair_intakes
+    - 髪のピンクの花: pink_flower_in_hair
+    - アホ毛: ahoge
+    - アンテナヘア: antenna_hair
+    - サイドポニーテール: side_ponytail
+    - 額: forehead
+    - ドリルヘア: drill_hair
+    - 髪の束: hair_bun
+    - ダブルバン: double_bun
+    - 乱れた髪型: messy_hair
+    - 髪のフラップ: hair_flaps
+
+  顔:
+    - メイク: makeup
+    - フンドシ: fundoshi #SENSITIVE # fundoshi is a loincloth, unusual for "face" category
+    - アイシャドウ: eyeshadow
+    - 口紅: lipstick
+    - マスカラ: mascara
+    - 長いまつげ: long_eyelashes
+    - 赤い唇: red_lips # removed trailing underscore
+    - 顔のペイント: facepaint
+    - リップグロス: lipgloss
+    - カラフルなまつげ: colored_eyelashes
+    - ブラッシュ: blush
+    - 淡いほお紅: light_blush
+    - アニメ風のほお紅: anime_style_blush # often "stylized_blush"
+    - 鼻のほお紅: nose_blush
+    - 鼻血: nosebleed
+    - 顔にあざ: bruise_on_face
+    - 顔のマーク: facial_mark
+    - 額のマーク: forehead_mark
+    - 怒りの静脈: anger_vein # "bulging_vein" or "forehead_vein"
+    - ほくろ: mole
+    - 目の下のほくろ: mole_under_eye
+    - そばかす: freckles
+    - 顔に食べ物: food_on_face
+    - 顔にご飯: rice_on_face
+    - 顔にクリーム: cream_on_face
+    - 口ひげ: mustache
+    - ゴートひげ: goatee
+    - ひげのマーキング: whisker_markings
+    - 傷跡: scar
+    - 目の上の傷跡: scar_across_eye
+    - たばこパイプ: smoking_pipe # "pipe_(smoking)"
+    - 入れ墨: tattoo (duplicate from 皮膚)
+
+  耳:
+    - エルフの耳: elf_ears
+    - 動物の耳（フェイク）: fake_animal_ears
+    - 猫の耳: cat_ears
+    - 犬の耳: dog_ears
+    - 狐の耳: fox_ears
+    - ウサギの耳: bunny_ears
+    - クマの耳: bear_ears
+    - オオカミの耳: wolf_ears
+
+
+  眉毛:
+    - 濃い眉毛: thick_eyebrows
+    - 眉を上げる: cocked_eyebrow
+    - 短い眉毛: short_eyebrows
+    - V字型の眉毛: v-shaped_eyebrows
+
+  目:
+    - 青い目: blue_eyes
+    - 赤い目: red_eyes
+    - 茶色の目: brown_eyes
+    - 緑の目: green_eyes
+    - 紫の目: purple_eyes
+    - 黄色い目: yellow_eyes
+    - ピンクの目: pink_eyes
+    - 黒い目: black_eyes
+    - アクアの目: aqua_eyes
+    - オレンジの目: orange_eyes
+    - 灰色の目: grey_eyes
+    - 多色の目: multicolored_eyes
+    - 白い目: white_eyes
+    - グラデーションの目: gradient_eyes
+    - 閉じた目: closed_eyes
+    - 半開きの目: half-closed_eyes
+    - 目を開けて泣く: crying_with_eyes_open
+    - 細めた目: narrowed_eyes
+    - 隠れた目: hidden_eyes
+    - ハート型の目: heart-shaped_eyes
+    - ボタンの目: button_eyes
+    - 軟体動物の目: cephalopod_eyes
+    - 髪の中から見える目: eyes_visible_through_hair
+    - 輝く目: glowing_eyes
+    - 空っぽの目: empty_eyes
+    - 回転する目: rolling_eyes
+    - 斜視: cross_eyed
+    - 空白の目: blank_eyes
+    - 輝く目: sparkling_eyes (glowing_eyes is similar)
+    - 追加の目: extra_eyes
+    - 狂気のある目: crazy_eyes
+    - 完全な丸い目: solid_circle_eyes
+    - 完全な楕円形の目: solid_oval_eyes
+    - 均一でない目: uneven_eyes
+    - 目から血涙: blood_from_eyes
+
+  瞳孔:
+    - 瞳孔: pupils
+    - 明るい瞳孔: bright_pupils
+    - 異色瞳: heterochromia
+    - 細長い瞳孔: slit_pupils
+    - 蛇の瞳孔: snake_pupils
+    - シンボル型の瞳孔: symbol-shaped_pupils
+    - ハート型の瞳孔: heart-shaped_pupils
+    - ダイヤモンド型の瞳孔: diamond-shaped_pupils
+    - 星型の瞳孔: star-shaped_pupils
+    - 拡張した瞳孔: dilated_pupils
+    - 瞳孔がない: no_pupils
+    - 瞳孔の輪郭: ringed_eyes
+    - 収縮した瞳孔: constricted_pupils
+    - 目の中の星: star_in_eye
+    - X字型の瞳孔: x-shaped_pupils
+    - 横長の瞳孔: horizontal_pupils
+    - 点線の目: dashed_eyes
+    - 蝶の瞳孔: butterfly-shaped_pupils
+    - 長方形の瞳孔: rectangular_pupils
+    - 四角い瞳孔: square_pupils
+    - 点状の瞳孔: dot_pupils
+    - 追加の瞳孔: extra_pupils
+    - 不揃いな瞳孔: mismatched_pupils
+    - 十字の瞳孔: plus_shaped_pupils
+    - 十字型の瞳孔: cross-shaped_pupils
+    - 紫色の瞳孔: purple_pupils
+    - オレンジの瞳孔: orange_pupils
+    - 青い瞳孔: blue_pupils
+    - 目の中のシンボル: symbol_in_eye
+
+  鼻:
+    - 尖った鼻: pointed_nose
+    - 小さな鼻: small_nose
+    - 大きな鼻: big_nose
+    - 鼻がない: no_nose
+    - 点状の鼻: dot_nose
+    - 鼻の泡: nose_bubble
+    - 匂いを嗅ぐ: smelling
+    - 鼻: nose
+    - 鼻水: snot
+    - 鼻先: snout
+
+  口:
+    - 栗の口: chestnut_mouth # (ω mouth)
+    - 厚い唇: thick_lips
+    - ふっくらとした唇: puffy_lips
+    - ハート型の口: heart-shaped_mouth
+    - ふくれっ面: pout
+    - 口を開ける: open_mouth # "parted lips" also used
+    - 口を閉じる: closed_mouth # "close_mouth" also used
+    - サメの口: shark_mouth
+    - 口を開ける: parted_lips
+    - 口の下のほくろ: mole_under_mouth
+    - 息を切らす（口を開けて）: gasping
+    - 少しだけ口を開ける: slightly_open_mouth
+    - 波打つ口: wavy_mouth
+    - 口を閉じる: close_mouth
+    - ドットの口: dot_mouth
+    - 口がない: no_mouth
+    - ギャグ: gag #SENSITIVE
+    - かじる: gnaw
+    - 顎の口: ":3" # emoticon for a cat-like mouth
+    - 口をふさぐ: cleave_gag #SENSITIVE
+    - 口を覆う: covered_mouth
+    - 追加の口: extra_mouth
+    - 口に髪が入っている: hair_in_mouth
+    - 口に髪の結び目: hair_tie_in_mouth
+    - 唇: lips
+    - 口: mouth
+    - 口で保持する: mouth_hold
+    - 口で: oral #SENSITIVE
+    - おしゃぶり: pacifier
+    - ふくれっ面: pouted_lips
+    - 横向きの口: sideways_mouth
+    - 口にスプーンを入れる: spoon_in_mouth
+    - 三角の口: triangle_mouth
+    - 唾液: saliva
+    - よだれを垂らす: drooling
+    - 口の端に唾液の泡: mouth_drool
+
+  胸部:
+    - 胸部: chest
+    - 平らな胸(A): flat_chest
+    - 小さい胸(B): small_breasts
+    - 中くらいの胸(C): medium_breasts
+    - 大きい胸(D): big_breasts
+    - 巨大な胸(E): huge_breasts
+    - 超巨大な胸(F): gigantic_breasts
+    - 乳房の間: between_breasts
+    - 胸を分ける: breasts_apart
+    - 下垂した胸: hanging_breasts
+    - 弾む胸: bouncing_breasts
+    - 谷間: cleavage
+    - 乳輪: areola #SENSITIVE
+    - 乳首: nipples #SENSITIVE
+    - 大胸筋: pectorals
+    - 大きな胸筋: large_pectorals
+    - 前ボタンを開けた服: unbuttoned_clothing 
+
+  腰:
+    - 細い腰: narrow_waist
+    - 細身の腰: slender_waist
+
+  腹部:
+    - 腹部: midriff
+    - お腹: belly
+    - 腹筋: abs
+    - 膨らんだ腹部: inflation
+    - へそ: navel
+    - 鼠径溝: groin #SENSITIVE
+    - 妊娠: pregnant # duplicate from 体型
+
+衣服や装飾品:
+  正装:
+    - スーツ: suit
+    - タキシード: tuxedo
+    - フォーマルドレス: formal_dress
+    - イブニングガウン: evening_gown
+    - カノニカルス（正装）: canonical_formal_wear
+    - カクテルドレス: cocktail_dress
+    - ガウン: gown
+    - 着物: japanese_clothes
+    - 着物: kimono # Specific term
+    - 袖なし着物: sleeveless_kimono
+    - 短い着物: short_kimono
+    - プリント着物: print_kimono
+    - 振袖（着物の一種）: furisode
+    - 帯（着物用）: obi
+    - サッシュ: sash
+    - チャイナドレス: cheongsam
+    - チャイナドレス: china_dress
+    - プリントチャイナドレス: print_cheongsam
+    - ペリネウムカーテン: pelvic_curtain #SENSITIVE
+    - ウェディングドレス: wedding_dress
+    - 白無垢（和風のウェディングドレス）: uchikake
+    - 学生服: school_uniform
+    - セーラー服: sailor_suit
+    - 夏季制服: summer_uniform
+    - 幼稚園制服: kindergarten_uniform
+    - 警察制服: police_uniform
+    - 海軍制服: naval_uniform
+    - 陸軍制服: military_uniform
+    - SS制服/ナチス制服: ss_uniform #SENSITIVE
+    - メイド服: maid_outfit # "maid" is the role
+    - 女侍従の制服: female_attendant_uniform
+    - 巫女服: miko_outfit # "miko" is the role
+    - オーバーオール: overalls
+    - ビジネススーツ: business_suit
+    - ナース服: nurse_outfit
+    - シェフの制服: chef_uniform
+    - 白衣: labcoat
+    - チアリーダー服: cheerleader_outfit
+    - バンドの制服: band_uniform
+    - スペーススーツ: space_suit
+    - レオタード: leotard
+    - 修道女服: nun_habit
+
+  カジュアルウェア:
+    - カジュアル: casual
+    - ルームウェア: loungewear
+    - パーカー: hoodie # Also under コート
+    - ホームウェア: homewear
+    - パジャマ: pajamas
+    - ナイトガウン: nightgown
+    - 寝間着: sleepwear
+    - ベビードール: babydoll #SENSITIVE
+    - プリントパジャマ: print_pajamas
+    - 水玉パジャマ: polka_dot_pajamas
+    - 浴衣: yukata
+    - 唐装: tang_suit
+    - 漢服: hanfu
+    - 道袍: taoist_robe
+    - ローブ: robe
+    - ブレンディングされたローブ: robe_of_blending
+    - クローク: cloak
+    - フード付きクローク: hooded_cloak
+    - 冬服: winter_clothes
+    - ダウンジャケット: down_jacket
+    - サンタ衣装: santa_costume
+    - ハーレム衣装: harem_outfit #SENSITIVE
+
+  スポーツウェア:
+    - スポーツウェア: sportswear
+    - 体育服: gym_uniform
+    - 体操服: athletic_leotard
+    - テニスウェア: tennis_uniform
+    - 野球ユニフォーム: baseball_uniform
+    - レターマンジャケット: letterman_jacket 
+    - バレーボールユニフォーム: volleyball_uniform
+    - 自転車スポーツウェア: biker_clothes
+    - 自転車用スーツ: bikesuit
+    - レスリング用衣装: wrestling_outfit
+    - 道着: dougi
+
+  水着:
+    - 水着: swimsuit
+    - 水着: swimwear
+    - 濡れた水着: wet_swimsuit
+    - スクール水着: school_swimsuit #SENSITIVE
+    - 新しいスクール水着: new_school_swimsuit #SENSITIVE
+    - 古いスクール水着: old_school_swimsuit #SENSITIVE
+    - 競泳用スクール水着: competition_school_swimsuit #SENSITIVE
+    - 競泳用水着: competition_swimsuit
+    - ワンピース水着: casual_one-piece_swimsuit
+    - 前ファスナー水着: front_zipper_swimsuit
+    - ハイレグ水着: highleg_swimsuit #SENSITIVE
+    - ワンピース水着: one-piece_swimsuit
+    - 永遠の夏の水着: swimsuit_of_perpetual_summe
+    - ビキニ: bikini #SENSITIVE
+    - ハイウエストビキニ: highleg_bikini #SENSITIVE
+    - ローライズビキニ: lowleg_bikini #SENSITIVE
+    - V字型水着: slingshot_swimsuit #SENSITIVE
+    - セーラー服風ビキニ: sailor_bikini #SENSITIVE
+    - 貝殻ビキニ: shell_bikini #SENSITIVE
+    - スポーツビキニ: sports_bikini
+    - ストリングビキニ: string_bikini #SENSITIVE
+    - ストラップレスビキニ: strapless_bikini
+    - サイドタイビキニ: side-tie_bikini
+    - 前結びビキニトップ: front-tie_bikini_top
+    - マルチストラップビキニ: multi-strapped_bikini
+    - Tバックビキニ: thong_bikini #SENSITIVE
+    - 前結びビキニ: front-tie_bikini
+    - フリルビキニ: frilled_bikini
+    - Oリング付きビキニ: o-ring_bikini
+    - アイパッチビキニ: eyepatch_bikini #SENSITIVE
+    - レイヤードビキニ: layered_bikini
+    - リボン付きビキニ: bow_bikini
+    - フリル水着: frilled_swimsuit
+    - 水玉柄水着: polka_dot_swimsuit
+    - ストライプ水着: striped_swimsuit
+    - ストライプビキニ: striped_bikini
+    - チェック柄ビキニ: plaid_bikini
+    - 水玉ビキニ: polka_dot_bikini
+    - プリントビキニ: print_bikini
+    - アメリカ国旗ビキニ: american_flag_bikini
+    - ドイツ国旗ビキニ: german_flag_bikini
+    - 体に描かれた水着: impossible_swimsuit #SENSITIVE
+    - ビキニトップのみ: bikini_top #SENSITIVE # "bikini_top_only"
+    - ビキニトップのみ: bikini_top_only #SENSITIVE
+    - ビキニトップを取り外す: bikini_top_removed #SENSITIVE
+    - ビキニボトムのみ: bikini_bottom_only #SENSITIVE
+    - ビキニパンツ: bikini_bottom #SENSITIVE
+    - 結ばれていないビキニ: untied_bikini #SENSITIVE
+    - 三角ビキニを横に: bikini_aside #SENSITIVE
+    - 水着の股部分を横に: swimsuit_aside #SENSITIVE
+    - 破れた水着: torn_swimsuit # Also torn_clothes
+    - ビキニスカート: bikini_skirt #SENSITIVE # Also under スカート
+    - 水泳用パンツ: swim_briefs
+    - 水泳帽: swim_cap
+    - 水泳用トランクス: swim_trunks
+    - 男性用水着: male_swimwear
+
+  上着物:
+    - ブラウス: blouse
+    - 白シャツ: white_shirt
+    - 襟付きシャツ: collared_shirt
+    - ドレスシャツ: dress_shirt
+    - セーラーシャツ: sailor_shirt
+    - クロップトップ: cropped_shirt
+    - Tシャツ: t-shirt
+    - カジュアルTシャツ: casual_t-shirt
+    - 半袖シャツ: short_sleeve_shirt
+    - オフショルダー: off-shoulder_shirt
+    - 肩をすくめる（衣類）: shrug_(clothing)
+    - カーディガン: cardigan
+    - クリスクロスハルター: criss-cross_halter
+    - フリルシャツ: frilled_shirt
+    - スウェットシャツ: sweatshirt
+    - ハワイアンシャツ: hawaiian_shirt
+    - フーディー: hoodie # Also under カジュアルウェア, コート
+    - フィットしすぎた服: impossibly_tight_shirt 
+    - (料理時に着る)割烹着: kappougi
+    - チェック柄シャツ: plaid_shirt
+    - ポロシャツ: polo_shirt
+    - プリントシャツ: print_shirt
+    - シャツ: shirt
+    - ノースリーブフーディー: sleeveless_hoodie
+    - ノースリーブシャツ: sleeveless_shirt
+    - ストライプシャツ: striped_shirt
+    - タンクトップ: tank_top
+    - ベスト: vest # Also セーターベスト under コート
+    - ウェストコート: waistcoat
+    - キャミソール: camisole
+    - 結び付けられたシャツ: tied_shirt
+    - アンダーシャツ: undershirt
+    - クロップトップ: crop_top
+    - ハイレグの衣類: highleg_outfit #SENSITIVE
+    - 衣類のカットアウト: clothing_cutout
+    - バックカットアウト: back_cutout
+    - 胸元のカットアウト: cleavage_cutout #SENSITIVE
+    - へそ出しカットアウト: navel_cutout
+    - 露出したトップス: midriff_exposure 
+    - ハート型のカットアウト: heart_cutout
+    - 破れた衣類: torn_clothes
+    - 破れたシャツ: torn_shirt
+    - 着替え中: undressing #SENSITIVE
+    - 衣服を下に下げる: clothes_pulled_down #SENSITIVE
+    - シャツをたくし上げる: shirt_lift #SENSITIVE
+    - シャツをまくり上げる: shirt_pull_up #SENSITIVE
+    - シャツをズボンに入れる: tucked_in_shirt 
+    - シャツを引っ張る: clothes_tug
+    - シャツを引っ張る: shirt_tug
+    - シャツを出す: untucked_shirt
+    - 開いた服: open_clothes
+    - ボタンを外したシャツ: unbuttoned_shirt
+    - ボタン間の隙間: button_gap #SENSITIVE
+    - 部分的にボタンが外れたシャツ: partially_unbuttoned_shirt
+    - 上部分のジッパーが開いている: partially_unzipped
+    - 脱いだ衣類: clothes_removed #SENSITIVE
+    - シャツを脱いだ: shirt_removed #SENSITIVE
+    - 衣類のズレ: wardrobe_malfunction #SENSITIVE
+    - サイズが小さすぎる衣類: undersized_clothing
+    - きつくなった衣服: tight_clothing
+    - ウェッジ（股間に食い込む）: wedgie #SENSITIVE
+    - 寄り詰めたシャツ: taut_shirt
+    - 寄り詰めた衣服: taut_clothes
+    - 下着に食い込む: underbust #SENSITIVE
+    - 大きすぎる衣服: oversized_clothes
+    - 大きすぎるシャツ: oversized_shirt
+    - 表裏の服: borrowed_clothes
+    - ストラップが滑り落ちる: strap_slip #SENSITIVE
+    - 濡れたシャツ: wet_shirt #SENSITIVE
+    - 衣類の盗難: clothes_theft #SENSITIVE
+
+  コート:
+    - ブレザー（ジャケット）: blazer
+    - オーバーコート: overcoat
+    - ダブルブレスト: double-breasted
+    - ロングコート: long_coat
+    - 羽織（広袖）: haori
+    - 冬用コート: winter_coat
+    - フード付きコート: hooded_coat
+    - 毛皮コート: fur_coat
+    - 毛皮飾りコート: fur-trimmed_coat
+    - ダッフルコート: duffel_coat
+    - フィッシュネットトップ: fishnet_top #SENSITIVE
+    - パーカー（フード付き）: parka 
+    - ジャケット: jacket
+    - ジャケット部分脱ぎ: jacket_partially_removed
+    - ジャケットが取り外された: jacket_removed
+    - オープンジャケット: open_jacket
+    - クロップドジャケット: cropped_jacket
+    - トラックジャケット: track_jacket
+    - フード付きトラックジャケット: hooded_track_jacket
+    - ミリタリージャケット: military_jacket
+    - 迷彩ジャケット: camouflage_jacket
+    - レザージャケット: leather_jacket
+    - ボンバージャケット: bomber_jacket
+    - デニムジャケット: denim_jacket
+    - ローブ風ジャケット: floating_jacket 
+    - 毛皮飾りジャケット: fur-trimmed_jacket
+    - 2トーンジャケット: two-tone_jacket
+    - トレンチコート: trench_coat
+    - 振袖（着物の一種）: furisode-
+    - ウィンドブレーカー: windbreaker
+    - レインコート: raincoat
+    - 羽衣（はごろも）: hagoromo
+    - チュニック（軍服）: tunic
+    - ケープ（肩掛け）: cape
+    - ケープレット: capelet
+    - アランセーター: aran_sweater
+    - ベージュセーター: beige_sweater
+    - プルオーバーセーター: brown_sweater
+    - フード付きセーター: hooded_sweater
+    - オフショルダーセーター: off-shoulder_sweater
+    - ストライプセーター: striped_sweater
+    - バージンキラーセーター: virgin_killer_sweater #SENSITIVE
+    - ダウンジャケット: puffer_jacket
+    - 冬服: winter_clothes
+    - セーター: sweater
+    - プルオーバーセーター: pullover_sweater
+    - リブ編みセーター: ribbed_sweater
+    - セーターベスト: sweater_vest
+    - バックレスセーター: backless_sweater
+
+  スカート:
+    - ドレス: dress
+    - マイクロドレス: microdress
+    - ロングドレス: long_dress
+    - オフショルダードレス: off-shoulder_dress
+    - ストラップレスドレス: strapless_dress
+    - バックレスドレス: backless_dress
+    - ホルタードレス: halter_dress
+    - サンドレス: sundress
+    - スリーブレスドレス: sleeveless_dress
+    - セーラードレス: sailor_dress
+    - サマードレス: summer_dress
+    - チャイナドレス: china_dress
+    - ピナフォアドレス: pinafore_dress
+    - スウェータードレス: sweater_dress
+    - ウェディングドレス: wedding_dress-
+    - アーマードドレス: armored_dress
+    - フリルドレス: frilled_dress
+    - レーストリムのドレス: lace-trimmed_dress
+    - 襟付きドレス: collared_dress
+    - 毛皮飾りドレス: fur-trimmed_dress
+    - レイヤードドレス: layered_dress
+    - プリーツドレス: pleated_dress
+    - 張り詰めたドレス: taut_dress
+    - ペンシルドレス: pencil_dress
+    - 非現実的なタイトなドレス: impossibly_tight_dress 
+    - 多色のドレス: multicolored_dress
+    - ストライプドレス: striped_dress
+    - チェック柄スカート: checkered_skirt 
+    - プレイドドレス: plaid_dress
+    - リブ編みドレス: ribbed_dress
+    - ポルカドットドレス: polka_dot_dress
+    - プリントドレス: print_dress
+    - 縦縞ドレス: vertical-striped_dress
+    - 透明ドレス: see-through_dress #SENSITIVE
+    - スカート: skirt
+    - マイクロスカート: microskirt #SENSITIVE
+    - ミニスカート: miniskirt
+    - スカートスーツ: skirt_suit
+    - ビキニスカート: bikini_skirt (already under 水着) #SENSITIVE
+    - プリーツスカート: pleated_skirt
+    - ペンシルスカート: pencil_skirt
+    - バブルスカート: bubble_skirt
+    - チュチュ（バレエのスカート）: tutu
+    - ボールガウン（舞踏会のドレス）: ballgown
+    - ペチスカート（下着のスカート）: pettiskirt 
+    - ショーガールスカート: showgirl_skirt
+    - ミディアム丈スカート: medium_length_skirt
+    - ベルトスカート: beltskirt
+    - デニムスカート: denim_skirt
+    - サスペンダースカート: suspender_skirt
+    - トップスとセットのスカート: skirt_set 
+    - ロングスカート: long_skirt
+    - 夏用ロングスカート: summer_long_skirt
+    - オーバースカート: overskirt
+    - 袴スカート: hakama_skirt
+    - ハイウエストスカート: high-waist_skirt
+    - 着物スカート: kimono_skirt
+    - サスペンダーロングスカート: suspender_long_skirt
+    - シフォンスカート: chiffon_skirt
+    - フリルスカート: frilled_skirt
+    - 毛皮飾りスカート: fur-trimmed_skirt
+    - レーススカート: lace_skirt
+    - レーストリムスカート: lace-trimmed_skirt
+    - リボン飾りスカート: ribbon-trimmed_skirt
+    - レイヤードスカート: layered_skirt
+    - プリントスカート: print_skirt
+    - 多色のスカート: multicolored_skirt
+    - ストライプスカート: striped_skirt
+    - 縦縞スカート: vertical-striped_skirt
+    - プレイドスカート: plaid_skirt # Also plaid_dress
+    - フレアスカート: flared_skirt
+    - 花柄スカート: floral_skirt
+
+  パンツ:
+    - ドレスのリボン: dress_bow
+    - 他の人に着せる: dressing_another
+    - スカートの下に履くパンツ: shorts_under_skirt
+    - サイドスリット: side_slit
+    - ショートパンツ: shorts
+    - マイクロショーツ: micro_shorts #SENSITIVE
+    - ショートショーツ: short_shorts
+    - ホットパンツ: hot_pants
+    - カットオフショーツ: cutoffs
+    - ストライプショーツ: striped_shorts
+    - サスペンダーショーツ: suspender_shorts
+    - デニムショーツ: denim_shorts
+    - パフィーショーツ: puffy_shorts
+    - ドルフィンショーツ: dolphin_shorts 
+    - ドルフィンショーツ: dolfin_shorts
+    - タイトパンツ: tight_pants
+    - クロッチレスパンツ: crotchless_pants #SENSITIVE
+    - トラックパンツ: track_pants
+    - ヨガパンツ: yoga_pants
+    - バイクショーツ: bike_shorts
+    - ジムショーツ: gym_shorts
+    - パンツ: pants
+    - パフィーパンツ: puffy_pants
+    - パンプキンパンツ: pumpkin_pants
+    - 袴パンツ: hakama_pants
+    - ハーレムパンツ: harem_pants
+    - ブルーマー: bloomers
+    - ブルマ（女子用...）: buruma #SENSITIVE
+    - ジーンズ: jeans
+    - カーゴパンツ: cargo_pants
+    - 迷彩パンツ: camouflage_pants
+    - カプリパンツ: capri_pants
+    - ジャンプスーツ: jumpsuit
+    - ローウエストパンツ: low-rise_pants 
+    - プレイドパンツ: plaid_pants
+    - 片方のパンツレッグ: single_pantsleg
+    - ストライプパンツ: striped_pants
+
+  靴下:
+    - ボディストッキング: bodystocking #SENSITIVE
+    - パンスト: pantyhose #SENSITIVE
+    - レギンス: leggings
+    - レギンス（一般...）: legwear
+    - サイハイソックス: thighhighs
+    - ニーハイソックス: kneehighs
+    - ソックス: socks
+    - 裸足: bare_legs
+    - 黒いボディストッキング: black_bodystocking #SENSITIVE
+    - 白いボディストッキング: white_bodystocking #SENSITIVE
+    - 服の下のストッキング: stockings_under_clothes #SENSITIVE
+    - 黒いパンスト: black_pantyhose #SENSITIVE
+    - 白いパンスト: white_pantyhose #SENSITIVE
+    - レッグバンド付きパンスト: thighband_pantyhose #SENSITIVE
+    - パンティライン: pantylines #SENSITIVE
+    - 片足だけパンスト: single_leg_pantyhose #SENSITIVE
+    - パンストの下に履くパンツ: panties_under_pantyhose #SENSITIVE
+    - フィッシュネットパンスト: fishnet_pantyhose #SENSITIVE # "fishnets"
+    - スティラップレギンス: stirrup_legwear
+    - つま先開きのレギンス: toeless_legwear
+    - ミスマッチのレギンス: mismatched_legwear
+    - 2トーンのレギンス: two-tone_legwear
+    - アシンメトリーレギンス: asymmetrical_legwear (already under パンツのインタラクション)
+    - 長さの異なるレギンス: uneven_legwear
+    - 白いサイハイソックス: white_thighhighs
+    - 黒いサイハイソックス: black_thighhighs
+    - ピンクのサイハイソックス: pink_thighhighs
+    - サスペンダー: suspenders # (for pants, not stockings usually)
+    - ガーターストラップ: garter_straps #SENSITIVE # Also under その他②
+    - 破れたサイハイソックス: torn_thighhighs
+    - 動物の耳のついたレギンス: animal_ear_legwear
+    - ストライプのレギンス: striped_legwear
+    - 縦縞のレッグウェア: vertical-striped_legwear
+    - ポルカドットのレッグウェア: polka_dot_legwear
+    - プリントのレッグウェア: print_legwear
+    - ショートパンツとレギンス: legwear_under_shorts
+    - シームのあるレギンス: seamed_legwear
+    - バックシームのレギンス: back-seamed_legwear
+    - オーバーニーソックス: over-kneehighs
+    - ボビーソックス: bobby_socks
+    - 足袋（たび）: tabi
+    - ルーズソックス: loose_socks
+    - アンクルソックス: ankle_socks
+    - レッグウォーマー: leg_warmers
+    - 一つだけのソックス: single_sock
+    - ストライプソックス: striped_socks
+
+  素材:
+    - アーマー付き: armored
+    - キャンバスの: canvas
+    - デニム: denim
+    - ふわふわした: fluffy
+    - 毛皮: fur
+    - ラテックス: latex #SENSITIVE
+    - 革製: leather
+    - 透明な: see-through #SENSITIVE
+    - スパンデックス: spandex
+    - タイトな: tight
+
+  靴:
+    - 裸足: bare_legs 
+    - 靴なし: no_shoes
+    - 靴を脱いだ: shoes_removed
+    - 一つだけの靴: single_shoe
+    - 一つだけの靴: the_only_shoe
+    - 黒いローファー: black_loafers
+    - 靴: shoes
+    - 室内履き: uwabaki
+    - プラットフォームシューズ: platform_footwear
+    - ハイヒール: high_heels
+    - スティレットヒール: stiletto_heels
+    - ストラップ付きヒール: strappy_heels
+    - プラットフォームヒール: platform_heels 
+    - 船の舵用の靴: rudder_footwear
+    - サンダル: sandals
+    - 裸足サンダル: barefoot_sandals
+    - 木靴サンダル: clog_sandals
+    - 下駄: geta
+    - スリッパ: slippers
+    - スケート靴: skates
+    - ローラースケート: roller_skates
+    - 動物の足: animal_feet 
+    - 動物のスリッパ: animal_slippers
+    - アンクレット: anklet
+    - 手錠: shackles #SENSITIVE
+    - 茶色の靴: brown_footwear
+    - クロスレースの靴: cross-laced_footwear
+    - ローファー: loafers
+    - メリージェーンシューズ: mary_janes
+    - ミスマッチの靴: mismatched_footwear
+    - 先の尖った靴: pointy_footwear
+    - パンプス: pumps
+    - サンダルを脱いだ: sandals_removed
+    - 靴底: shoe_soles
+    - 靴紐: shoelaces
+    - スニーカー: sneakers
+    - 羽のついた靴: winged_footwear
+    - 草履: zouri
+
+  ブーツ:
+    - ブーツ: boots
+    - ブーツを脱いだ: boots_removed
+    - 太腿ブーツ: thigh_boots
+    - ニーブーツ: knee_boots
+    - クロスレースのブーツ: cross-laced_boots
+    - アンクルブーツ: ankle_boots
+    - ハイヒールブーツ: high_heel_boots
+    - つま先の露出したブーツ: toeless_boots
+    - 毛皮トリムのブーツ: fur-trimmed_boots
+    - スノーブーツ: snow_boots
+    - ゴム長靴: rubber_boots # (Wellington boots)
+    - サンタブーツ: santa_boots
+    - 革ブーツ: leather_boots
+    - コンバットブーツ: combat_boots
+    - ドクターマーチン: doc_martens
+    - 雨靴: rain_boots
+    - ベルトブーツ: belt_boots
+    - ファーブーツ: fur_boots
+    - 一つだけのブーツ: single_boot
+
+  靴底:
+    - 靴底: shoe_soles (already under 靴)
+    - アーチのある靴底: arched_soles
+    - 足跡のついた靴底: paw_print_soles
+    - 蹄鉄: horseshoe
+
+  襟元:
+    - セーラーカラー: sailor_collar
+    - 毛皮の襟: fur_collar
+    - フリルの襟: frilled_collar
+    - 立ち襟: popped_collar
+    - チョーカー: choker
+    - 黒いチョーカー: black_choker
+    - ベルト付き襟: belt_collar
+    - フリルのチョーカー: frilled_choker
+    - ネッカチーフ: neckerchief
+    - 赤いネッカチーフ: red_neckerchief
+    - ネクタイ: necktie
+    - 短いネクタイ: short_necktie
+    - 白いネクタイ: white_necktie
+    - ボウタイ: bowtie
+    - 首にかけたヘッドフォン: headphones_around_neck
+    - 首にかけたゴーグル: goggles_around_neck
+    - 首にかけたベル: neck_bell
+    - 襟巻き: neck_ruff
+    - Vネック: v-neck
+    - 首にかけたタオル: towel_around_neck
+    - ゆるいネクタイ: loose_necktie
+    - 首のタトゥー: neck_tattoo
+    - アスコット: ascot
+    - リボンのチョーカー: ribbon_choker
+    - 前貼り/乳貼り: pasties #SENSITIVE
+    - ラテックス: latex (already under 素材) #SENSITIVE
+    - ぼろぼろの服: torn_clothes
+    - 鉄十字勲章: iron_cross_medal # "iron_cross"
+    - 中国結び: chinese_knot
+    - 十字架のネックレス: cross_necklace
+    - ビーズのネックレス: bead_necklace
+    - 真珠のネックレス: pearl_necklace
+    - ハートのネックレス: heart_necklace
+    - 人参のネックレス: carrot_necklace
+    - チェーンのネックレス: chain_necklace
+    - 勾玉のネックレス: magatama_necklace
+    - 歯のネックレス: tooth_necklace
+    - キーのネックレス: key_necklace
+    - アンカーのネックレス: anchor_necklace
+    - 髑髏のネックレス: skull_necklace
+    - 貝殻のネックレス: shell_necklace
+    - 金のネックレス: gold_necklace
+    - 三日月のネックレス: crescent_necklace
+    - リングのネックレス: ring_necklace
+    - 羽のネックレス: feather_necklace
+    - 骨のネックレス: bone_necklace
+    - アンクのネックレス: ankh_necklace
+    - 複数のネックレス: multiple_necklaces
+    - 弾丸のネックレス: bullet_necklace
+    - ネックレスを掴む: holding_necklace
+    - ネックレスを外す: necklace_removed
+    - 茶色の首飾り: brown_neckwear
+    - チェック柄の襟元: checkered_neckwear
+    - 斜めストライプの襟元: diagonal-striped_neckwear
+    - ハルターネック: halterneck
+    - 首にほくろ: mole_on_neck
+    - 首: neck
+    - 首にリボンを結ぶ: neck_ribbon
+    - 首輪: neck_ring
+    - ネックレス: necklace # Also under 小装飾品, 首飾り
+    - チェック柄の襟飾り: plaid_neckwear
+    - V字の切り込み: plunging_neckline
+    - プリントの襟飾り: print_neckwear
+    - 袖なしタートルネック: sleeveless_turtleneck
+    - 星のネックレス: star_necklace
+    - ストライプの襟元: striped_neckwear
+    - タートルネックスウェット: turtleneck_sweater
+    - 解けたネクタイ: undone_necktie
+    - 首にかけた笛: whistle_around_neck
+
+  スカーフ:
+    - チェック柄のスカーフ: plaid_scarf
+    - ストライプのスカーフ: striped_scarf
+    - プリントのスカーフ: print_scarf
+    - 縦ストライプのスカーフ: vertical-striped_scarf
+    - 水玉模様のスカーフ: polka_dot_scarf
+    - アーガイル柄のスカーフ: argyle_scarf
+    - ベージュのスカーフ: beige_scarf
+    - スカーフのリボン: scarf_bow
+    - 毛皮のスカーフ: fur_scarf
+    - 裸のスカーフ: naked_scarf #SENSITIVE
+    - 多色のスカーフ: multicolored_scarf
+    - 浮遊するスカーフ: floating_scarf
+    - 長いスカーフ: long_scarf
+    - 腕のスカーフ: arm_scarf
+    - 頭に巻いたスカーフ: scarf_on_head
+    - 口にかけたスカーフ: scarf_over_mouth
+    - スカーフを外した: scarf_removed
+    - スカーフを調整中: adjusting_scarf
+    - スカーフを持つ: holding_scarf
+    - スカーフを引っ張る: scarf_pull
+    - 茶色のスカーフ: brown_scarf
+    - スカーフ: scarf
+
+  メガネ:
+    - メガネ: glasses
+    - 眼鏡: eyewear
+    - モノクル: monocle
+    - アンダーリムの眼鏡: under-rim_eyewear
+    - リムレスの眼鏡: rimless_eyewear
+    - セミリムレスの眼鏡: semi-rimless_eyewear
+    - 赤いフレームの眼鏡: red-framed_eyewear
+    - 丸いフレームの眼鏡: round_eyewear
+    - 黒いフレームの眼鏡: black-framed_eyewear
+    - 色付きの眼鏡: tinted_eyewear
+    - 医療用アイパッチ: medical_eyepatch
+    - 一つの目に包帯: bandage_over_one_eye
+    - 曲がった眼鏡: crooked_eyewear
+    - 眼鏡を外した: eyewear_removed
+    - サングラス: sunglasses
+    - ゴーグル: goggles
+    - 目隠し: blindfold
+    - 目帯: eyepatch
+    - バイザー: visor
+    - 眼鏡をかけた: bespectacled
+    - 青いフレームの眼鏡: blue-framed_eyewear
+    - 茶色のフレームの眼鏡: brown-framed_eyewear
+    - 度の厚い丸黒縁眼鏡: coke_bottle_glasses
+    - 眼鏡なし: no_eyewear
+    - 不透明な眼鏡: opaque_glasses
+    - オーバーリムの眼鏡: over-rim_eyewear
+
+  耳飾り:
+    - 十字のイヤリング: cross_earrings
+    - クリスタルのイヤリング: crystal_earrings
+    - イヤリング: earrings
+    - 花のイヤリング: flower_earrings
+    - ハートのイヤリング: heart_earrings
+    - フープイヤリング: hoop_earrings
+    - 複数のイヤリング: multiple_earrings
+    - 薬の形をしたイヤリング: pill_earrings
+    - 一つのイヤリング: single_earring
+    - スカラのイヤリング: skull_earrings
+    - 星のイヤリング: star_earrings
+
+  頭飾り:
+    - ハロー: halo
+    - 機械のハロー: mechanical_halo
+    - 頭飾り: headwear
+    - 頭飾り: headpiece
+    - 頭飾りを外した: headwear_removed
+    - 頭の花輪: head_wreath
+    - 王冠: crown
+    - ミニクラウン: mini_crown
+    - ティアラ: tiara
+    - 同上: diadem 
+    - 傾けられた頭飾り: tilted_headwear
+    - 頭のヒレ: head_fin
+    - メイドのヘッドドレス: maid_headdress
+    - 花嫁のベール: bridal_veil
+    - ヘッドバンド: headband
+    - 異なる頭飾り: alternative_headwear
+    - 毛皮のトリム付き頭飾り: fur-trimmed_headwear
+    - 頭飾りにゴーグル: goggles_on_headwear
+    - イヤホン: earphones
+    - イヤーマフ: earmuffs
+    - 頭飾りから耳がはみ出す: ears_through_headwear
+    - 頭にxx: object_on_head
+    - 頭に葉: leaf_on_head
+    - お団子: topknot 
+    - 水面鏡: suigintou_headdress
+    - 三角形の頭飾り: triangular_headpiece
+    - 頭当て: forehead_protector
+    - ラジオアンテナ: radio_antenna 
+    - 動物のフード: animal_hood
+    - 矢印（シンボル）: arrow_symbol_on_head
+    - 斧: axe_on_head 
+    - 禿げ: bald
+    - バンダナ: bandana
+    - ボブカット: bob_cut
+    - 骨: bone_on_head
+    - ボウルカット: bowl_cut
+    - 円環: circlet
+    - ダブルパン: double_bun
+    - ダブルディルド: double_dildo #SENSITIVE
+    - ドリル: drill_on_head 
+    - 蛇口: faucet_on_head
+    - 鉢巻: hachimaki
+    - 耳の後ろの髪: hair_behind_ear
+    - 髪につけたベル: hair_bell
+    - 髪の束: hair_bun
+    - 髪を下ろした: hair_down 
+    - 揺れる髪: hair_flaps
+    - 髪をかき上げる: hair_flip
+    - 髪に花をつけた: hair_flower
+    - 広がった髪: hair_spread_out
+    - 髪を上げた: hair_up
+    - ヘルメムをかぶった: wearing_helmet
+    - ヘルメットを外した: helmet_removed
+    - 角のついたヘルメット: horned_helmet
+    - ジャパニーズバン: japanese_hair_bun
+    - カーフィア: kerchief
+    - マミモグモグ: mami_mogu_mogu_headdress 
+    - モブキャップ: mob_cap 
+    - 片方の髪を上げた: one_side_up
+    - フクロウ: owl_on_head
+    - ピアス: piercing 
+    - 枕: pillow_on_head 
+    - 上げられた拳: raised_fist_above_head
+    - 髑髏と十字骨: skull_and_crossbones_on_head
+    - 石: stone_on_head 
+    - ターバン: turban
+    - ツインドリルヘア: twin_drills
+    - アップスタイル: updo
+    - 濡れた髪: wet_hair # (hair, also 濡れたシャツ, 濡れた水着)
+    - 頭部装飾品: headdress
+    - 頭飾りの調整: adjusting_headwear
+    - クマの模様の頭飾り: bear_hair_ornament
+    - 茶色の頭飾り: brown_headwear
+    - 角状の頭飾り: horned_headwear
+    - 頭飾りに角の穴が開いている: horns_through_headwear
+    - 頭飾りなし: no_headwear
+    - プリントの頭飾り: print_headwear
+    - 骨型の装飾品: bone_hair_ornament
+    - ウサギの装飾品: bunny_hair_ornament
+    - 角に装飾品がある: horn_ornament
+    - 頭に動物がいる: animal_on_head
+    - 後頭部にヘッドドレス: behind-the-head_headdress
+    - 頭に鳥がいる: bird_on_head
+    - 猫耳のヘッドフォン: cat_ear_headphones
+    - 頭に猫がいる: cat_on_head
+    - 頭に眼鏡がある: eyewear_on_head
+    - 額: forehead
+    - 額の宝石: forehead_jewel
+    - 額にキス: forehead_kiss
+    - 額に模様: forehead_mark
+    - 額同士が触れる: forehead-to-forehead
+    - 頭にゴーグルを乗せる: goggles_on_head 
+    - 頭: head # (body part)
+    - 頭にこぶ: head_bump
+    - 頭を下げる: head_down
+    - 頭に乗せたデザート: dessert_on_head 
+    - 頭の一部分がフレア状: head_out_of_frame 
+    - 頭を支える: head_rest
+    - 頭を傾ける: head_tilt
+    - 頭に羽がある: head_wings
+    - 頭部装飾品（一般）: headgear
+    - ヘッドフォン: headphones
+    - HUD（ゲームや映像の表示）: heads-up_display
+    - ヘッドセット: headset
+    - EVAの神経接続装置: evangelion_interface_headset
+    - 頭に乗っている: on_head 
+    - 頭の上に人がいる: person_on_head
+    - 一つの羽のついた頭飾り: single_head_wing
+
+  帽子:
+    - 帽子: hat
+    - 帽子なし: no_hat
+    - 大きな帽子: large_hat
+    - ミニ帽子: mini_hat
+    - 魔女の帽子: witch_hat
+    - ミニ魔女帽子: mini_witch_hat
+    - 魔法使いの帽子: wizard_hat
+    - パーティーハット: party_hat
+    - 小丑の帽子: jester_cap
+    - とんがり帽: tokin_hat
+    - トップハット: top_hat
+    - ミニトップハット: mini_top_hat
+    - ボウラーハット: bowler_hat
+    - ピルボックスハット: pillbox_hat
+    - クロッシェハット: cloche_hat
+    - サイドキャップ: side_cap
+    - 軍帽: military_hat
+    - ベレー帽: beret
+    - ガリソンキャップ: garrison_cap
+    - 警察帽: police_hat
+    - ナースキャップ: nurse_cap
+    - シェフハット: chef_hat
+    - 学生帽: school_hat
+    - 海賊の帽子: pirate_hat
+    - キャピーハット: cabbie_hat 
+    - バケットハット: bucket_hat
+    - 安全帽: hardhat
+    - ストローハット: straw_hat
+    - 日よけ帽子: sun_hat
+    - 米の藁帽子: rice_hat
+    - 動物の帽子: animal_hat
+    - 毛皮の帽子: fur_hat
+    - 耳のついた帽子: hat_with_ears
+    - ボブルハット: bobble_hat 
+    - 枕帽子: pillow_hat
+    - パンプキンハット: pumpkin_hat
+    - 野球帽: baseball_cap
+    - フラットキャップ: flat_cap
+    - 破れた帽子: torn_hat
+    - モブキャップ: mob_cap 
+    - ニューズボーイキャップ: newsboy_cap
+    - 白いベレー帽に黒いリボン: white_beret_with_black_ribbon 
+    - 後ろ向きの帽子: backwards_hat
+    - ボウルハット: bowl_hat
+    - 猫の帽子: cat_hat
+    - チャットログ: chat_log_on_hat
+    - カウボーイハット: cowboy_hat
+    - ディキシーカップハット: dixie_cup_hat
+    - リボンのついた帽子: hat_bow
+    - 羽根のついた帽子: hat_feather
+    - 花のついた帽子: hat_flower
+    - 飾りのついた帽子: hat_ornament
+    - 一つの目を見下ろす帽子: hat_over_one_eye
+    - 帽子を取り外した: hat_removed
+    - リボンのついた帽子: hat_ribbon 
+    - 帽子のつばを持つ: holding_hat_brim
+    - ハッチング（テクスチャ）: hatching_on_hat
+    - 初音ミクのコスプレ: hatsune_miku_cosplay_hat
+    - そうなの？: is_that_so_text_on_hat 
+    - ポークパイハット: porkpie_hat
+    - セーラーハット: sailor_hat
+    - サンタの帽子: santa_hat
+    - 横向きの帽子: sideways_hat
+	
+  髪飾り:
+    - 髪リボン: hair_ribbon
+    - 髪バンド: hairband
+    - 髪留め: hair_tie
+    - ロリータヘアバンド: lolita_hairband
+    - フリルのついたヘアバンド: frilled_hairband
+    - レーストリムのヘアバンド: lace-trimmed_hairband
+    - 髪ゴム: hair_bobbles
+    - 髪飾り: hair_ornament
+    - 髪の花: hair_flower
+    - X型の髪飾り: x_hair_ornament
+    - ヘアボウ: hair_bow
+    - カエルの髪飾り: frog_hair_ornament
+    - ハートの髪飾り: heart_hair_ornament
+    - 蝶の髪飾り: butterfly_hair_ornament
+    - 星の髪飾り: star_hair_ornament
+    - 食べ物のテーマの髪飾り: food-themed_hair_ornament
+    - アンカー型の髪飾り: anchor_hair_ornament
+    - コウモリの髪飾り: bat_hair_ornament
+    - 人参の髪飾り: carrot_hair_ornament
+    - 猫の髪飾り: cat_hair_ornament
+    - クローバーの髪飾り: clover_hair_ornament
+    - 三日月の髪飾り: crescent_hair_ornament
+    - 十字架の髪飾り: cross_hair_ornament
+    - 十字キーの髪飾り: d-pad_hair_ornament
+    - 魚の形の髪飾り: fish_hair_ornament
+    - 髪の毛に対になった飾り: hairpods
+    - 葉の髪飾り: leaf_hair_ornament
+    - 音符の髪飾り: musical_note_hair_ornament
+    - カボチャの髪飾り: pumpkin_hair_ornament
+    - 髑髏の髪飾り: skull_hair_ornament
+    - 蛇の髪飾り: snake_hair_ornament
+    - 雪の結晶の髪飾り: snowflake_hair_ornament
+    - 苺の髪飾り: strawberry_hair_ornament
+    - ひまわりの髪飾り: sunflower_hair_ornament
+    - ヘアピン: hairpin
+    - ヘアクリップ: hairclip
+    - 髪の管: hair_tubes
+    - 髪棒: hair_stick
+    - 髪の束: hair_bun
+    - 一つの髪の束: single_hair_bun
+    - 髪の鈴: hair_bell
+    - 髪の輪: hair_rings
+
+  小装飾品:
+    - 指輪: ring
+    - 結婚指輪: wedding_ring
+    - イヤリング: earrings
+    - 一つのイヤリング: single_earring
+    - スタッドイヤリング: stud_earrings
+    - ネックレス: necklace 
+    - ジュエリー: jewelry-
+    - クリスタル: crystal
+    - ブローチ: brooch-
+    - 宝石: gem
+    - 胸の宝石: chest_jewel
+    - 額の宝石: forehead_jewel
+    - タッセル: tassel
+    - ベリーチェーン: belly_chain #SENSITIVE
+    - レース: lace 
+    - リボン: ribbon
+    - ステッチ: stitches
+    - スカーフ: scarf 
+    - 絆創膏: bandaid 
+    - 襟: collar 
+    - ベルト: belt
+    - 蒸気: steam 
+    - ベル: bell
+    - 護符: amulet
+    - エンブレム: emblem
+    - 旗のプリント: flag_print 
+    - アンカーのシンボル: anchor_symbol
+    - 十字: cross_symbol
+    - 回折スパイク: diffraction_spikes
+    - 鉄十字: iron_cross
+    - ラテン十字: latin_cross
+    - レーストリムの裾: lace-trimmed_hem
+    - 足首のレースアップ: ankle_lace-up 
+    - セントグロリアーナの十字: st_gloriana_jewel
+    - ハートロック（南京錠）: heart-shaped_padlock
+    - ガーター: garters #SENSITIVE
+    - 太ももストラップ: thigh_strap #SENSITIVE
+    - 太ももリボン: thigh_ribbon
+    - 脚のガーター: leg_garter #SENSITIVE
+    - ガーターストラップ: garter_straps #SENSITIVE
+    - 脚リボン: leg_ribbon
+    - 脚に絆創膏: bandaid_on_leg 
+    - 包帯巻きの脚: bandaged_leg 
+    - 腕のガーター: arm_garter -
+    - 関節: joints
+    - 膝当て: kneepads 
+    - ニーパッド: knee_pads
+    - 太ももホルスター: thigh_holster 
+    - 膝に絆創膏: bandaid_on_knee 
+
+  首飾り:
+    - ブレスレット: bracelet
+    - チョーカー: choker 
+    - 金属の首輪: metal_collar #SENSITIVE
+    - 指輪: ring 
+    - リストバンド: wristband-
+    - ペンダント: pendant
+    - ブローチ: brooch
+    - フープイヤリング: hoop_earrings
+    - バングル: bangle
+    - スタッドイヤリング: stud_earrings
+    - 太陽の飾り: sun_ornament
+    - 真珠のブレスレット: pearl_bracelet
+    - ドロップイヤリング: drop_earrings
+    - 人形の指輪: puppet_rings 
+    - コサージュ: corsage
+    - サファイアのブローチ: sapphire_brooch
+    - ジュエリー: jewelry
+    - ネックレス: necklace
+    - ドロップイヤリング: drop_earrings 
+
+表情動作:
+  笑う:
+    - 微笑: smile
+    - 大笑: laughing
+    - 幸せな笑顔: kind_smile
+    - 歯を見せて笑う: grin
+    - からかわれて笑う: teasing_smile
+    - 魅力的な微笑み: seductive_smile
+    - ニヤリと笑う: smirk
+    - くすくす笑い: giggling
+    - うぬぼれた: smug
+    - いたずらっ子の顔: naughty_face
+    - 邪悪な笑み: evil_smile
+    - 狂気じみた笑い: crazy_smile
+    - 幸せ幸福: happy 
+	
+  悲しみ:
+    - 悲しい: sad
+    - 泣きじゃくる: sobbing
+    - 大泣き: crying
+    - 目を開けて泣く: crying_with_eyes_open
+    - 涙を流す: streaming_tears
+    - 涙滴: teardrop
+    - 衣服を引き裂く: tearing_clothes
+    - 泣きそうな表情: tearing_up
+    - 涙: tears
+    - 涙を拭く: wiping_tears
+    - 機嫌が悪い: bad_mood
+  がっかり:
+    - 意気消沈: frustrated
+    - 顔をしかめる: frustrated_brow
+    - 苦悩している: annoyed
+    - 苦悩: anguish
+    - ため息: sigh
+    - 陰気な: gloomy
+    - がっかりした: disappointed
+    - 絶望: despair
+  軽蔑:
+    - 嫌悪（ゴミのよう...）: disgust # Incomplete text
+    - 軽蔑: disdain
+    - 蔑視: contempt
+    - 顔に陰がある: shaded_face 
+    - 軽蔑の目つき: jitome
+    - 顔をしかめる: frown
+    - 顔をしかめる（ウィンク）: wince
+    - 顔の筋をひそめる: furrowed_brow
+    - 恐怖で横目: kubrick_stare_fear
+    - 笑っている: laughing
+  怒り:
+    - 怒っている: angry
+    - 怒りのまなざし: glaring
+    - 真剣な（angry...）: serious 
+    - 横目で睨む: kubrick_stare
+    - 邪悪な: evil_expression 
+    - 不機嫌な: sulking
+    - 叫び大声で叫ぶ: screaming
+    - 叫ぶ: shouting
+  その他の表情:
+    - 無表情: expressionless
+    - 眠い: sleepy
+    - 酔っぱらっている: drunk
+    - 退屈な: bored
+    - 困惑させる: confused
+    - 考える: thinking
+    - 孤独な: lonely
+    - 軽い頬紅: light_blush 
+    - 顔紅: blush
+    - 内気な: shy
+    - 恥ずかしい（困...）: embarrassed 
+    - 手で顔を覆う: facepalm
+    - 戸惑った: flustered
+    - 汗をかく: sweat 
+    - 怖がっている: scared
+    - アヘ顔: ahegao #SENSITIVE
+    - 忍耐の表情: endured_face 
+    - 忍耐: restrained_expression 
+    - ダークな人格: dark_persona
+    - 狂気じみた: crazy_expression
+    - 疲れ切った: exhausted
+    - ツンデレ: tsundere_expression
+    - 病的な愛情を持つ: yandere_expression
+    - 複数の人格: multiple_persona_expression
+    - ジキルとハイド: jekyll_and_hyde_expression
+    - 痙攣: twitching 
+    - 痙攣: spasm
+    - 震え: trembling
+    - 強姦顔: rape_face #SENSITIVE
+    - 目を回す（絶頂顔）: rolling_eyes_orgasm #SENSITIVE
+    - 嫉妬: envy
+    - 絶頂: female_orgasm_face #SENSITIVE
+    - 重い呼吸、おそ...）: heavy_breathing 
+    - いたずらっ子: naughty_expression 
+    - 表情の差分（お...）: expression_sheet
+    - 呻き声: moaning #SENSITIVE
+    - しかめ面: scowl
+  体の動作:
+    - 立っている: standing
+    - 仰向けになる: on_back
+    - うつ伏せになる: on_stomach
+    - ひざまずく: kneeling
+    - 横たわる: on_side
+    - うつ伏せになる: on_stomach (duplicate)
+    - トップダウン、ボトムアップ: top-down_bottom-up
+    - ポーズ: the_pose
+    - 逆さお辞儀: bent_over #SENSITIVE
+    - 逆さま: upside-down
+    - 逆転: reversal 
+    - 戦闘姿勢: fighting_stance
+    - 一方向に寄りかかる: leaning_to_the_side
+    - 寄りかかる体を伸ばす: leaning_forward
+    - 身体を後ろに傾ける: leaning_back
+    - 物に寄りかかる: leaning_on_object
+    - 背中を反らす: arched_back
+    - 身体を前に傾ける: leaning_forward
+    - 浮かぶ（水上に）: afloat
+    - 横になる: lying
+    - 胎児の姿勢（横になる）: fetal_position
+    - 人の上に横になる: lying_on_person
+    - 池の上に横になる: lying_on_lake
+    - 水の上に横になる: lying_on_water
+    - プロネボーン（うつ伏せ）: prone_bone #SENSITIVE
+    - リクライニング: reclining
+    - 寝る: sleeping_upright 
+    - 披露（後ろに部位...）: presenting #SENSITIVE
+    - 回転する: spinning
+    - ポーズをとる: posing
+    - おしゃれなポーズ: stylish_pose
+    - 公然わいせつ: public_indecency #SENSITIVE
+    - パロディ: parody
+    - 容器の中に: in_container
+    - ガラスに押し付ける: against_glass #SENSITIVE
+    - 狙う: aiming
+    - 見る人を見習う: aiming_at_viewer
+    - 化粧する: applying_makeup
+    - 入浴する: bathing
+    - 噛む: biting
+    - 出血する: bleeding
+    - 吹く: blowing
+    - お辞儀する: bowing
+    - 火を吹く: breathing_fire
+    - ほうきに乗る: broom_riding
+    - 歯を磨く: brushing_teeth
+    - 泡を吹く: bubbling 
+    - いじめる: bullying #SENSITIVE
+    - 燃える: burning
+    - 追いかける: chasing
+    - 掃除する: cleaning
+    - 慰める: comforting
+    - 料理する: cooking
+    - 泣く: crying 
+    - 抱きしめる: cuddling
+    - 踊る: dancing
+    - 潜る: diving
+    - 引っ張る: dragging
+    - 描く: drawing # (art)
+    - 夢を見る: dreaming_bow
+    - 夢を見る: dreaming
+    - 飲む: drinking
+    - 運転する: driving
+    - （肩掛けせずに）落とす: dropping 
+    - 乾かす（入浴後）: drying_off
+    - 両手持ち: dual_wielding
+    - 運動する: exercise
+    - 戦闘中: fighting
+    - 射撃する: firing_weapon
+    - 釣りをする: fishing
+    - 手をパタパタと振る: flapping 
+    - 露出する: flashing #SENSITIVE
+    - 逃げる: fleeing
+    - 筋肉を見せる: flexing_muscles 
+    - 飛ぶ: flying 
+    - 飛ぶ: flying_kick
+    - 髪をとかす: hair_brushing
+    - ぶら下がる: hanging
+    - 打つ: hitting
+    - 想像中の: imagining
+    - 表示: jumping 
+    - 蹴る: kicking
+    - 舐める: licking #SENSITIVE
+    - 唇を舐める: licking_lips #SENSITIVE
+    - 唇を噛む: lip_biting
+    - 瞑想: meditation
+    - 絵を描く: painting 
+    - トランプをする: playing_cards 
+    - ゲームをする: playing_games
+    - 楽器を演奏する: playing_instrument
+    - ポールダンス: pole_dancing #SENSITIVE
+    - 祈る: praying
+    - パンチする: punching
+    - 押す: pushing
+    - 手ですすりをつかむ: railing_grab
+    - 読む: reading
+    - 乗る: riding
+    - 走る: running
+    - 縫う: sewing
+    - 買い物をする: shopping
+    - シャワーを浴びる: showering
+    - 歌う: singing
+    - スラッシング: slashing
+    - 寝る: sleeping
+    - 匂いを嗅ぐ: smelling
+    - タバコを吸う: smoking
+    - くしゃみをする: sneezing
+    - 雪が降る: snowing
+    - 足を浸す: soaking_feet
+    - サッカー: soccer
+    - 容認から液体を吐き出す: spitting 
+    - 口から液体を吐き出す: spitting_liquid 
+    - 水しぶきを上げる: splashing
+    - 液体の上に立つ: standing_on_liquid
+    - 片足立ち: standing_on_one_leg
+    - 立ち屈伸: standing_split 
+    - 熊手を交差させる: steepled_fingers
+    - 絞める: strangling #SENSITIVE
+    - 掃除する: sweeping 
+    - 泳ぐ: swimming
+    - 揺れる: swinging
+    - 尻を振る: tail_wagging 
+    - 写真撮るセリフ: taking_a_picture
+    - 考える: thinking
+    - くすぐる: tickling
+    - トイレを使う: toilet_use
+    - 投げる: tossing
+    - トリッピング: tripping 
+    - いじわる行為: trolling
+    - 結ぶ（動作）: tying
+    - 鞘から抜く: unsheathing
+    - 解く: untying
+    - ファスナーを開ける: unzipping
+    - 水を足に浸す: wading
+    - 目を覚ます: waking_up
+    - 液体の上を歩く: walking_on_liquid
+    - 洗う: washing
+    - ささやく: whispering
+    - レスリング（スポーツ）: wrestling
+    - 書く: writing
+    - あくびをする: yawning
+
+  脚の動き:
+    - 一本の脚を上げている: leg_up # "legs_up" if both
+    - 脚を広げている: spread_legs #SENSITIVE
+    - 脚を閉じている: legs_together
+    - 脚を組んでいる: crossed_legs
+    - M字開脚: m_legs #SENSITIVE
+    - M字開脚: standing_split_legs #SENSITIVE
+    - 膝の間に手を置いている: hand_between_legs #SENSITIVE
+    - 開脚の姿勢: open_stance 
+    - 股間を隠す膝のポーズ: convenient_leg_censor #SENSITIVE
+    - 両脚で締め付ける: leg_lock #SENSITIVE
+    - 両脚: legs
+    - 両脚を頭の上に持っていく: legs_over_head #SENSITIVE
+    - しゃがんで脚を開く: squatting_open_legs #SENSITIVE
+    - 膝をくっつけて座る: knees_together # (while sitting)
+    - 膝の上に動物が乗っている: animal_on_lap
+    - 手を自分の膝に置いている: hand_on_own_knee
+    - 膝を上げている: knee_up
+    - 膝: knees
+    - 膝を胸に近づけている: knees_to_chest
+    - 膝の上に乗っている: on_lap
+    - 座っている: sitting
+    - 腰掛け座り: wariza
+    - 跨がって座っている: straddling #SENSITIVE
+    - 横座り: yokozuwari 
+    - 後ろ向きに座っている: sitting_backwards
+    - 木に座っている: sitting_in_tree
+    - 物の上に座っている: sitting_on_object # "sitting_on_xx"
+    - 胡座座り: butterfly_sitting 
+    - 蓮華座: lotus_position
+    - 手すりに座っている: sitting_on_railing
+    - 岩の上に座っている: sitting_on_rock
+    - 階段に座っている: sitting_on_stairs
+    - テーブルに座っている: sitting_on_table
+    - 水の上に座っている: sitting_on_water
+    - 座布団: zabuton
+    - インド座り: indian_style_sitting
+    - 脚を組んで座っている: sitting_on_chair_crossed_leg
+    - 椅子に座っている: sitting_on_chair
+    - サイドサドル: sidesaddle 
+    - ベッドに座っている: sitting_on_bed
+    - 机に座っている: sitting_on_desk
+    - しゃがんでいる: squatting
+    - 一本の膝: one_knee_bent 
+    - 跪いている: kneeling
+    - 四つん這い: all_fours #SENSITIVE
+    - グラビアポーズ: gravure_pose #SENSITIVE
+    - 蹴っている: kicking 
+    - ハイキック: high_kick
+    - 横になっている: reclining 
+    - 自分の脚を抱えている: hugging_own_legs
+    - 裸足: bare_legs 
+    - 脚の一部分のみ描写: cropped_legs
+    - 脚にベルトを巻いている: leg_belt
+    - 脚の毛: leg_hair
+    - 脚を上げている: leg_up
+    - 脚を開いている: legs_apart #SENSITIVE
+    - 機械の足: mechanical_legs
+    - 裸足: barefoot # (feet without shoes/socks)
+    - 足跡: footprints
+    - 足: feet
+    - 足を上げている: feet_up
+    - 足首のストラップ: ankle_strap
+    - 足首を巻いている: ankle_wrap
+    - 足を交差させている: crossed_ankles
+    - 太ももが太い: thick_thighs
+
+画面:
+
+  芸術スタイル:
+    - アートブック: artbook_style # "artbook"
+    - ゲームCG: game_cg
+    - コミック: comic_style
+    - 4コマ漫画: 4koma
+    - アニメーションGIF: animated_gif
+    - 抱き枕: dakimakura_art #SENSITIVE
+    - コスプレ: cosplay_photo
+    - クロスオーバー: crossover
+    - ダークな: dark_style
+    - 明るい: light_style
+    - グロ: guro #SENSITIVE
+    - リアル: realistic
+    - 写真: photo-referenced
+    - 真実の: realistic_style 
+    - 風景: landscape_art
+    - 都市風景: cityscape_art
+    - 科学技術の幻想: science_fiction_art
+    - パロディ: parody
+    - 擬人化: personification
+    - 視覚の錯覚: optical_illusion
+    - 名画のパロディ: fine_art_parody
+    - スケッチ: sketch_style
+    - 伝統的なメディア: traditional_media_style
+    - 水彩画（中程度）: watercolor_painting_style
+    - シルエット: silhouette_style 
+    - カバー: cover_art
+    - アルバム: album_art
+    - 文字入りの画像: sample_image_with_text
+    - 背後の画像: back_view_art
+    - バストアップ: bust_shot_art
+    - 構図: composition_focus
+    - 表情: expression_sheet_art
+    - 作品の主要なキャラクター: all_characters_art
+    - コマ割り: panel_layout
+    - 透明な背景: transparent_background 
+    - シンプルな背景: simple_background 
+    - グラデーション背景: gradient_background
+    - 背景が前景の拡大: zoom_layer
+    - 8ビットゲーム: 8-bit_game_style
+    - 1980年代のアニメ: 1980s_anime_style
+    - ディズニー映画: disney_movie_style
+    - ゴスロリ: goth_lolita_style # "goth"
+    - 1980年代の映画: 1980s_movie_style
+    - バブルボブル: bubble_bobble_style
+    - ピクサーのスタイル: pixar_style
+    - ポラロイドアート: polaroid_art
+    - カレイドスコープ写真: kaleidoscope_photography_style
+    - オパールレンダー: opal_render_style
+    - ケミグラム: chemigram_style
+    - スタジオジブリ: studio_ghibli_style
+    - 夢のような: dreamlike_style
+    - 模倣伝統的なメディア: faux_traditional_media_style
+    - 魔法の渦巻き: magic_vortex_art
+    - ディーゼルパンク: dieselpunk_style 
+    - 雑誌のスキャン: magazine_scan_style
+    - アルバムのカバー: album_cover 
+    - 線画: lineart_style 
+    - シンセウェーブ: synthwave_style
+    - ロゴ: logo_style
+  芸術の種類:
+    - モノクロ画像: monochrome
+    - コラージュアート: collage_art 
+    - ガラスモザイク: dalle_de_verre_mosaic
+    - ピクセルアート: pixel_art
+    - エンカウスティーク: encaustic_painting
+    - 水墨画: ink_wash_painting
+    - メゾチント: mezzotint
+    - シルエット: silhouette 
+    - イラスト: illustration
+    - 水彩画: watercolor_painting 
+    - 浮世絵: ukiyoe
+    - 中国風: chinese_ink_wash_painting 
+    - 油絵: oil_painting
+    - モノクロのポートレート: monochrome_portrait_sketch
+    - スケッチ: sketch
+    - 鉛筆スケッチ: monochrome_watercolor_pencil_sketch
+    - 水彩鉛筆: watercolor_pencil
+  芸術派:
+    - アール・ヌーヴォー: art_nouveau 
+    - 古典主義: classicism 
+    - フューチャリズム: futurism
+    - ダダイスム: dadaism
+    - 抽象芸術: abstract_art 
+    - ASCIIアート: ascii_art
+  アーティストのスタイル:
+    - アルフォンス・ミュシャ風: alphonse_mucha_style
+    - モネのスタイル: monet_style
+  照明:
+    - リムライト: rim_lighting
+    - ボリューメトリックライティング: volumetric_lighting
+    - 発光するネオンライト: glowing_neon_lights
+    - シネマティックライティング: cinematic_lighting
+    - レンズフレア: lens_flare
+    - 金属の光沢: metallic_sheen 
+    - ムーディな照明: moody_lighting
+    - ティンダル効果: tyndall_effect 
+    - 光漏れのエフェクト: light_leaks
+    - 背景の光: background_light
+    - 天然光: natural_light
+  リアル:
+    - リアル: realistic 
+    - 厚塗り: impasto_style
+    - 写真風: photorealistic_style 
+    - 油絵: oil_painting 
+    - 現実: reality_depiction 
+    - ポラロイド写真: polaroid_photo_style
+	
+  色: 
+    - オレンジ色: orange_color
+    - 青色: blue_color
+    - 赤色: red_color
+    - 明るい茶色: light_brown_color
+    - 濃いピンク色: dark_pink_color
+    - カーキ色: khaki_color
+    - 金髪の: blonde_color
+    - 茶色: brown_color
+    - 黒色: black_color
+    - 灰色: gray_color
+    - 濃い灰色: darkgray_color
+    - 銀色: silver_color
+    - 明るい灰色: lightgray_color
+    - ゲインズボロ色: gainsboro_color
+    - ホワイトスモーク: whitesmoke_color
+    - 雪色: snow_color
+    - ゴーストホワイト: ghostwhite_color
+    - フローラルホワイト: floralwhite_color
+    - 亜麻色: linen_color
+    - アンティークホワイト: antiquewhite_color
+    - パパイヤホイップ: papayawhip_color
+    - ブランチドアーモンド: blanchedalmond_color
+    - ビスク色: bisque_color
+    - モカシン色: moccasin_color
+    - ナバホホワイト色: navajowhite_color
+    - ピーチパフ色: peachpuff_color
+    - ミスティローズ色: mistyrose_color
+    - ラベンダーブラッシュ: lavenderblush_color
+    - シーシェル色: seashell_color
+    - オールドレース色: oldlace_color
+    - アイボリー色: ivory_color
+    - ハニーデュー色: honeydew_color
+    - ミントクリーム色: mintcream_color
+    - 空色: azure_color # "skyblue" also used
+    - アリスブルー色: aliceblue_color
+    - ラベンダー色: lavender_color
+    - 明るい鋼色: lightsteelblue_color
+    - 明るいスレートグレー色: lightslategray_color
+    - スレートグレー色: slategray_color
+    - 鋼色: steelblue_color
+    - ロイヤルブルー色: royalblue_color
+    - 真夜中の青色: midnightblue_color
+    - 海軍色: navy_color
+    - 濃い青色: darkblue_color
+    - 中間の青色: mediumblue_color
+    - ドッジャーブルー色: dodgerblue_color
+    - コーンフラワーブルー色: cornflowerblue_color
+    - 空色: skyblue_color
+    - 明るい青色: lightblue_color
+    - パウダーブルー色: powderblue_color
+    - ペイルターコイズ色: paleturquoise_color
+    - 明るいシアン色: lightcyan_color
+    - シアン色: cyan_color
+    - アクアマリン色: aquamarine_color
+    - ターコイズ色: turquoise_color
+    - 中間のターコイズ色: mediumturquoise_color
+    - 濃い青緑色: darkturquoise_color
+    - 明るいシーグリーン色: lightseagreen_color
+    - カデットブルー色: cadetblue_color
+    - 濃いシアン色: darkcyan_color
+    - ティール色: teal_color
+    - 濃いスレートグレー色: darkslategray_color
+    - 濃い緑色: darkgreen_color
+    - 緑色: green_color
+    - 森林緑色: forestgreen_color
+    - 海緑色: seagreen_color
+    - 中間の海緑色: mediumseagreen_color
+    - 中間のアクアマリン色: mediumaquamarine_color
+    - 濃い緑松石色: darkseagreen_color
+    - 淡い緑色: palegreen_color
+    - 明るい緑色: lightgreen_color
+    - 春の緑色: springgreen_color
+    - 中間の春の緑色: mediumspringgreen_color
+    - 芝生の緑色: lawngreen_color
+    - シャルトリューズ色: chartreuse_color
+    - グリーンイエロー色: greenyellow_color
+    - ライム色: lime_color
+    - ライムグリーン色: limegreen_color
+    - 黄緑色: yellowgreen_color
+    - 濃いオリーブグリーン色: darkolivegreen_color
+    - オリーブドラブ色: olivedrab_color
+    - オリーブ色: olive_color
+    - 濃いカーキ色: darkkhaki_color
+    - 淡いゴールデンロッド色: palegoldenrod_color
+    - コーンシルク色: cornsilk_color
+    - ベージュ色: beige_color
+    - 明るい黄色: lightyellow_color
+    - 明るいゴールデンロッドイエロー色: lightgoldenrodyellow_color
+    - レモンシフォン色: lemonchiffon_color
+    - 小麦色: wheat_color
+    - バーリーウッド色: burlywood_color
+    - 茶褐色: tan_color
+    - 黄色: yellow_color
+    - 金色: gold_color
+    - 砂色: sandybrown_color
+    - 濃いオレンジ色: darkorange_color
+    - ゴールデンロッド色: goldenrod_color
+    - ペルー色: peru_color
+    - 濃いゴールデンロッド色: darkgoldenrod_color
+    - チョコレート色: chocolate_color
+    - シエナ色: sienna_color
+    - サドルブラウン色: saddlebrown_color
+    - マルーン色: maroon_color
+    - 濃い赤色: darkred_color
+    - ファイアブリック色: firebrick_color
+    - インディアンレッド色: indianred_color
+    - ロージーブブラウン色: rosybrown_color
+    - 濃いサーモン色: darksalmon_color
+    - 明るいコーラル色: lightcoral_color
+    - サーモン色: salmon_color
+    - ライトサーモン色: lightsalmon_color
+    - コーラル色: coral_color
+    - トマト色: tomato_color
+    - オレンジレッド色: orangered_color
+    - 深紅色: crimson_color
+    - 中間の紫赤色: mediumvioletred_color
+    - ホットピンク色: hotpink_color
+    - 淡い紫赤色: palevioletred_color
+    - ピンク色: pink_color
+    - 明るいピンク色: lightpink_color
+    - シッスル色: thistle_color
+    - マゼンタ色: magenta_color
+    - フクシャ色: fuchsia_color
+    - 紫色: violet_color # "purple"
+    - プラム色: plum_color
+    - オーキッド色: orchid_color
+    - 中間のオーキッド色: mediumorchid_color
+    - 濃いオーキッド色: darkorchid_color
+    - 濃い紫赤色: darkviolet_color
+    - 濃いマゼンタ色: darkmagenta_color
+    - 紫色: purple_color
+    - インディゴ色: indigo_color
+    - 濃いスレートブルー色: darkslateblue_color
+    - ブルーバイオレット色: blueviolet_color
+    - 中間の紫色: mediumpurple_color
+    - スレートブルー色: slateblue_color
+    - 中間のスレートブルー色: mediumslateblue_color
+  背景:
+    - ファンタジー風: fantasy_background
+    - 科学技術の幻想: science_fiction_background
+    - サイバーパンク: cyberpunk_background
+    - 被写界深度（編集）: depth_of_field_background 
+    - ぼかし背景: blurry_background
+    - ぼかし前景: blurry_foreground
+    - シンプルな背景: simple_background
+    - 黒い背景: black_background
+    - 白い背景: white_background
+    - 透明な背景: transparent_background 
+    - ベージュの背景: beige_background
+    - 茶色の背景: brown_background
+    - 褐色の背景: tan_background
+    - 灰色の背景: grey_background
+    - 二色調の背景: two-tone_background
+    - グラデーション背景: gradient_background
+    - 多色の背景: multicolored_background
+    - 虹の背景: rainbow_background
+    - 抽象的な背景: abstract_background
+    - アーガイル模様の背景: argyle_background
+    - チェック柄の背景: checkered_background
+    - 花のデザインの背景: floral_background 
+    - ハーフトーンの背景: halftone_background
+    - ハート模様の背景: heart_background
+    - ハチの巣模様の背景: honeycomb_background
+    - プレイド模様の背景: plaid_background
+    - 水玉模様の背景: polka_dot_background
+    - 縞模様の背景: striped_background
+    - 風景: scenery_background
+    - 風景: landscape_background
+    - 花柄の背景: floral_background
+    - トップ部分がはみ出した背景: crop_top_overhang_background 
+    - 星空の背景: starry_background
+    - 輝く星の背景: sparkle_background
+    - 都市の風景: cityscape_background 
+    - 都市の灯りの背景: city_lights_background
+    - 時計の背景: clock_background
+    - 泡の背景: bubble_background
+    - 枠線: border_background 
+    - 柱状の背景: pillarboxed_background 
+    - 角が丸い背景またはフレーム: rounded_corners_background
+    - ビューファインダー: viewfinder_overla
+    - ウィンドウボックス: windowboxed_background
+    - 一部が背景の枠外: outside_border_background
+    - フラッシュバック: flashback_effect 
+    - テキストの背景: wall_of_text_background
+    - 背景テキスト: background_text
+	
+環境:
+  天気:
+    - 昼間: day
+    - 夕暮れ: dusk
+    - 夜: night
+    - 雨: rain
+    - 雨の中で: in_the_rain
+    - 雨の日: rainy_days
+    - 日の入り: sunset
+    - 曇り: cloudy
+    - 満月: full_moon
+    - 太陽: sun
+    - 月: moon
+    - 満月: full_moon
+    - 星: stars
+    - 空: sky
+    - 宇宙: universe
+    - 雪氷: snow_and_ice
+    - 雪片: snowflakes
+    - 稲妻: lightning
+    - 虹: rainbow
+    - 流星群: meteor_shower
+    - 積乱雲: cumulonimbus 
+  自然:
+    - 自然: nature
+    - 海: sea 
+    - 海洋: ocean -
+    - 浜辺: beach -
+    - 丘陵: hills
+    - 牧草地で: in_a_meadow
+    - 浜辺で: on_the_beach
+    - 水中で: underwater #SENSITIVE
+    - 海上で: over_the_sea
+    - 森林: forest
+    - 砂漠で: in_a_desert
+    - 高原: plateau
+    - 崖: cliff
+    - 渓谷: canyon
+    - オアシス: oasis
+    - 竹林: bamboo_forest
+    - 氷河: glacier
+    - 浮島: floating_island
+    - 火山: volcano
+    - サバンナ: savanna
+    - 滝: waterfall
+    - 小川: stream
+    - 荒地: wasteland
+    - 野原: field
+    - 田んぼ: rice_paddy
+    - 麦畑: wheat_field
+    - 花畑: flower_field
+    - 花海: sea_of_flowers
+    - 宇宙/スペース: space
+    - 星空: starry_sky
+    - 湖: lake
+    - 川: river
+    - 温泉: onsen 
+    - 花の草原: flower_meadow
+    - アルプス山脈: alps
+    - 夢の森（幻想的...）: dreamy_forest
+  空:
+    - 空: sky 
+    - 傾斜した空: gradient_sky
+    - 夜空: night_sky
+    - 星空: starry_sky
+    - 超銀河: hyper_galaxy 
+    - 星（空にある）: star_(in_sky)
+    - 星の軌跡: star_trail
+    - 夕日: sunset
+    - 月: moon 
+    - 月の、月球の: lunar
+    - 三日月: crescent_moon 
+    - 新月: new_moon 
+    - 満月: full_moon 
+    - 月光: moonlight
+    - 緋色の月: scarlet_moon
+    - 宇宙: universe
+    - 宇宙/スペース: space
+    - 惑星: planet
+    - 宇宙ステーションから: from_space_station_view 
+    - 人工衛星: satellite
+
+  雰囲気:
+    - 新年: new_year_atmosphere
+    - 兎年: year_of_the_rabbit_atmosphere
+    - バレンタイン: valentine_atmosphere
+    - 元宵節: lantern_festival_atmosphere
+    - 夏祭り: summer_festival_atmosphere
+    - 七夕: tanabata_atmosphere
+    - 中秋節: mid-autumn_festival_atmosphere
+    - ハロウィン: halloween_atmosphere
+    - クリスマス: christmas_atmosphere
+    - 爆発: explosion_background 
+    - 水蒸気: water_vapor_effect 
+    - 花火: fireworks
+    - 天窓: skylight
+    - カラフルなガラス: colorful_glass
+    - ステンドグラス: stained_glass
+    - グラフィティの壁: graffiti_wall
+    - モザイクの背景: mosaic_background
+    - 液体の背景: liquid_background
+    - 魔法の輪: magic_circles
+    - 蛍光キノコの森: fluorescent_mushroom_forest
+    - カラフルな泡: colorful_bubbles
+    - 海の夕焼け: ocean_sunset 
+    - 夕暮れの逆光: backlit_at_dusk 
+    - ゴールデンアワーの光: golden_hour_light
+    - 強いリムライト: strong_rim_light
+    - 濃い影: intense_shadows
+	
+シーン:
+  屋外:
+    - 城: castle
+    - 街: city-
+    - 水上公園: waterpark
+    - カルーセル: carousel
+    - 観覧車: ferris_wheel
+    - 水族館: aquarium
+    - 動物園: zoo
+    - ボウリング場: bowling_alley
+    - 美術館: art_gallery -
+    - 博物館: museum
+    - プラネタリウム: planetarium
+    - スイミングプール: swimming_pool
+    - スタジアム: stadium
+    - 寺院: temple
+    - バス停: bus_stop
+    - 駅: train_station
+    - 噴水: fountain
+    - 遊び場: playground
+    - 市場の屋台: market_stall
+    - 電話ボックス: phone_booth
+    - 鉄道の線路: railroad_tracks
+    - 空港: airport
+    - トンネル: tunnel
+    - 超高層ビル: skyscraper 
+    - 都市の景観: cityscape
+    - 遺跡: ruins
+    - グレコローマン建築: greco-roman_architecture
+    - 東アジアの建築物: east_asian_architecture
+    - 鳥居: torii
+    - 教会: church
+    - 店舗: shop
+    - 街路: street
+    - サイバーパンクの街: cyberpunk_city
+    - サイバーパンクの世界: in_cyberpunk_world 
+    - 中国風建築: chinese_style_architecture
+    - 御幣: gohei 
+    - 賑華な都市: bustling_city
+    - 研究室: laboratory
+    - コーヒーハウス: coffee_house
+    - ジム: gym
+    - 図書館: library
+    - 刑務所: prison
+    - 機関室: engine_room
+    - 手すり: handrail
+    - ネオンライト: neon_lights
+    - 街灯: street_lamp
+    - 道路: road-
+    - 貧民街: shanty_town
+    - 倉庫: warehouse
+    - ゴシック建築: gothic_architecture
+    - レストラン: restaurant
+    - 木の家: treehouse
+    - モダン・ヨーロッパ: modern_european_architecture
+    - 工業風、中国建築: industrial_style_chinese_architecture
+    - 建物の周り地: building_ruins
+    - バー: bar
+    - 鉄棒、ブランコ: trapeze 
+    - 居酒屋: izakaya
+    - カフェ: cafe
+    - パン屋: bakery
+    - コンビニ: convenience_store
+    - スーパーマーケット: supermarket
+    - 薬局: pharmacy
+    - 劇場: theater
+    - 映画館: movie_theater
+    - 作業場: workshop
+    - 法廷: courtroom
+    - 公園: park
+    - 教室: classroom 
+    - 植物園: botanical_garden
+    - 遊園地: amusement_park
+    - ディズニーランド: disneyland
+    - アリーナ: arena
+    - レスリングリング: wrestling_ring
+    - 講堂: auditorium
+    - コンサート: concert_venue 
+    - 和風旅館: japanese_inn 
+    - 刑務所のバー: jail_bars
+    - 映画館で: in_movie_theater
+    - ステージ: stage -
+    - 港: harbor
+    - カジノ: casino
+    - ビリヤード台: billiard_table
+    - ダンジョン: dungeon 
+    - 墓: grave
+    - 墓地: graveyard
+    - 墓石: tombstone
+    - 巨大な石の物体: monolith
+    - ラペリング: rappelling 
+    - 建物: building
+    - 建築: architecture
+    - 壮大な建築: magnificent_architecture
+    - 超高層ビル: Skyscraper 
+    - 東アジアの建築: east_asian_architecture
+    - 大聖堂: cathedral
+    - 中国風ロフト: chinese_style_loft
+    - 伝統的な中国の建築: traditional_chinese_architecture
+    - タレット: turret
+    - タワー: tower
+    - モスク: mosque
+    - 貯水池: reservoir
+    - 鉄道: railroad 
+    - 鉄道: railway
+    - 橋: bridge
+    - 橋の下: under_bridge
+    - 遺跡: remains 
+    - 廃墟: rubble_ruins
+  都市:
+    - 街: city 
+    - 都市の景観: cityscape
+    - 街路: street 
+    - ダウンタウン: downtown
+    - 人混み: crowd
+    - 小道: alley # "path"
+    - 大通りで: in_main_street
+    - 交差点: intersection
+    - 大通り: avenue
+    - 芝生: lawn
+    - 道: road 
+    - 小道: path
+    - 舗装道路: pavement
+    - 道路標識: road_sign
+    - 交通コーン: traffic_cone
+    - 街灯: lamppost
+    - 電柱と電線: power_lines
+    - フェンス: fence
+    - 手すり: railing 
+    - ベンチ: bench
+    - 自動販売機: vending_machine
+  屋内:
+    - 屋内: indoor
+    - 浴室: bathroom
+    - トイレの個室: toilet_stall
+    - オタクの部屋: otaku_room
+    - カフェテリア: cafeteria
+    - 教室: classroom 
+    - クラブルーム: clubroom
+    - 寝室: bedroom 
+    - 美術館: art_room
+    - 浴槽: bathing_area
+    - 階段: stairs
+    - 温室: greenhouse
+    - キッチン: kitchen
+    - 寮: dormitory
+    - ダンジョン: dungeon 
+    - 地下室: dungeon_basement 
+    - 医務室: infirmary
+    - ステージ: stage 
+    - 配電室: electrical_room
+    - サーバールーム: server_room
+    - 地下室: basement
+	
+  家具:
+    - 寝室: bedroom 
+    - 畳: tatami
+    - ベッド: bed
+    - ソファ: couch
+    - 炬燵: kotatsu
+    - 暖炉: fireplace
+    - 窓: window
+    - 窓枠: window_sash
+    - カーテン: curtains
+    - ドア: door
+    - 引き戸: sliding_doors
+    - 洋服掛け: clothes_rack
+    - エアコン: air_conditioner
+    - テーブル: table
+    - 学校の机: school_desk
+    - 椅子: chair
+    - 肘掛け椅子: armchair
+    - リクライニングチェア: lounge_chair
+    - ビーチチェア: beach_chair
+    - 折りたたみ椅子: folding_chair
+    - 目に見えない椅子: invisible_chair
+    - オフィスチェア: office_chair
+    - 車椅子: wheelchair
+  寝具:
+    - ベッドシーツ: bed_sheet
+    - マットレス: mattress
+    - 布団: futon
+    - クッション: cushion
+    - カーペット: carpet
+    - 枕: pillo
+    - 餃子型抱き枕: dumpling_shaped_hug_pillow
+    - 抱き枕: dakimakura #SENSITIVE
+    - Yes/No枕: yes-no_pillow
+    - ぬいぐるみ: stuffed_animal
+    - ぬいぐるみのウサギ: stuffed_bunny
+  浴室:
+    - 浴室: bathroom
+    - 浴槽: bathtub
+    - ゴムのアヒル: rubber_duck
+    - シャワーヘッド: shower_head
+    - トイレ: toilet
+    - 和式トイレ: squat_toilet
+    - 石鹸: soap
+    - タイル: tiles
+
+レンズ:
+  レンズ（映す場所）:
+    - パノラマ: panorama
+    - 風景: landscape
+    - ワイドショット: wide_shot
+    - 中景: medium_shot
+    - 中景: mid_shot
+    - 全身像: full_body_shot
+    - バスト: bust_shot
+    - 上半身: upper_body_shot 
+    - 下半身: lower_body_shot
+    - 上半身＋太ももまで: cowboy_shot
+    - 肖像画/ポートレート: portrait
+    - プロフィール: profile_view 
+
+  カメラの角度:
+    - 正面視点: front_view
+    - 横から: from_side_view 
+    - 上から: from_above_view
+    - 下から: from_below_view
+    - 外から内へ: from_outside_view
+    - 背後から: from_behind_view_alt
+    - 背後から: from_behind_angle 
+    - ダイナミックな角度: dynamic_angle
+    - 映画的な角度: cinematic_angle
+    - オランダ角度: dutch_angle
+    - 遠近法: foreshortening_effect
+    - 魚眼: fisheye_lens_effect 
+  効果（エフェクト）:
+    - 被写界深度: depth_of_field 
+    - レンズフレア: lens_flare
+    - モーションブラー: motion_blur
+    - 動きを表す線: motion_lines
+    - スピードライン: speed_lines
+    - ボケ: bokeh
+    - 色収差: chromatic_aberration
+    - 過曝: overexposure
+    - 等高線強調: contour_deepening

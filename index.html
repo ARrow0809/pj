@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロンプトジェネレーター</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^6.3.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>プロンプトジェネレーター</h1>
+            <p class="subtitle">オールインワン高品質なAI画像生成プロンプトを作成します</p>
+        </header>
+
+        <nav id="main-tabs-nav">
+            <button class="tab-button active" data-tab="style">スタイル</button>
+            <button class="tab-button" data-tab="model-features">モデル特徴</button>
+            <button class="tab-button" data-tab="lighting-settings">照明設定等</button>
+            <button class="tab-button" data-tab="shooting-environment">撮影環境</button>
+            <button class="tab-button" data-tab="additional-settings">追加設定</button>
+            <button class="tab-button" data-tab="tenpure" id="tenpure-tab-button">テンプレ/読込</button>
+            <button class="tab-button" data-tab="all-in-one">オールインワン</button>
+        </nav>
+
+        <main id="tab-content-container">
+            <section id="style-tab" class="tab-content active">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="style-select">スタイル選択</label>
+                        <select id="style-select" name="style-select">
+                            <option value="">選択してください</option>
+                            <option value="Illustration style">イラスト</option>
+                            <option value="Photograph style">写真</option>
+                            <option value="Instax polaroid style">チェキ</option>
+                            <option value="Disposable camera film style">写ルンです</option>
+                            <option value="DSLR camera photo style">一眼レフカメラ</option>
+                            <option value="Leica M10 photo style">Leica M10</option>
+                            <option value="Pixel art style">ピクセルアート</option>
+                            <option value="Watercolor painting style">水彩画</option>
+                            <option value="Oil painting style">油絵</option>
+                            <option value="Anime style illustration">アニメ風</option>
+                            <option value="Manga style illustration">漫画風</option>
+                            <option value="Concept art style">コンセプトアート</option>
+                            <option value="Sketch style">スケッチ風</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section id="model-features-tab" class="tab-content">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="ethnicity">国籍/民族的特徴</label>
+                        <select id="ethnicity" name="ethnicity">
+                            <option value="">選択してください</option>
+                            <option value="Japanese">日本人</option>
+                            <option value="Korean">韓国人</option>
+                            <option value="Chinese">中国人</option>
+                            <option value="Caucasian">白人</option>
+                            <option value="South Asian">南アジア系</option>
+                            <option value="Mixed Asian-Western">ハーフ (アジア系-西洋系)</option>
+                            <option value="South African">南アフリカ系</option>
+                            <option value="Southeast Asian">東南アジア系</option>
+                            <option value="Latin American">ラテンアメリカ系</option>
+                            <option value="Middle Eastern">中東系</option>
+                            <option value="African">アフリカ系</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="age-group">年齢層</label>
+                        <select id="age-group" name="age-group">
+                            <option value="">選択してください</option>
+                            <option value="Late teens">10代後半</option>
+                            <option value="Early 20s">20代前半</option>
+                            <option value="Mid 20s">20代半ば</option>
+                            <option value="Late 20s">20代後半</option>
+                            <option value="Early 30s">30代前半</option>
+                            <option value="Mid 30s">30代半ば</option>
+                            <option value="Late 30s">30代後半</option>
+                            <option value="40s">40代</option>
+                            <option value="50s">50代</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hairstyle">髪型</label>
+                        <select id="hairstyle" name="hairstyle">
+                            <option value="">選択してください</option>
+                            <option value="Long straight hair">ロングストレート</option>
+                            <option value="Long straight hair with bangs">ロングストレート (前髪あり)</option>
+                            <option value="Long layered hair">ロングレイヤー</option>
+                            <option value="Long layered hair with bangs">ロングレイヤー (前髪あり)</option>
+                            <option value="Medium wave hair">ミディアムウェーブ</option>
+                            <option value="Medium wave hair with bangs">ミディアムウェーブ (前髪あり)</option>
+                            <option value="Medium layered hair">ミディアムレイヤー</option>
+                            <option value="Medium layered hair with bangs">ミディアムレイヤー (前髪あり)</option>
+                            <option value="Short bob">ショートボブ</option>
+                            <option value="Short bob with bangs">ショートボブ (前髪あり)</option>
+                            <option value="Short cut">ショートカット</option>
+                            <option value="Short cut with bangs">ショートカット (前髪あり)</option>
+                            <option value="Pixie cut">ピクシーカット</option>
+                            <option value="Ponytail">ポニーテール</option>
+                            <option value="Twintails">ツインテール</option>
+                            <option value="Buns (Odango)">お団子ヘア</option>
+                            <option value="Upstyle">アップスタイル</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hair-color">髪色</label>
+                        <select id="hair-color" name="hair-color">
+                            <option value="">選択してください</option>
+                            <option value="Black hair">黒髪</option>
+                            <option value="Brown hair">茶髪</option>
+                            <option value="Blonde hair">金髪</option>
+                            <option value="Red hair">赤髪</option>
+                            <option value="Silver hair">銀髪</option>
+                            <option value="Blue hair">青髪</option>
+                            <option value="Green hair">緑髪</option>
+                            <option value="Pink hair">ピンク髪</option>
+                            <option value="Purple hair">紫髪</option>
+                            <option value="White hair">白髪</option>
+                            <option value="Gradient hair">グラデーション</option>
+                            <option value="Highlighted hair">ハイライト</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="clothing-style">服装スタイル</label>
+                        <select id="clothing-style" name="clothing-style">
+                            <option value="">選択してください</option>
+                            <option value="Casual wear">カジュアル</option>
+                            <option value="Formal wear">フォーマル</option>
+                            <option value="Business suit">スーツ</option>
+                            <option value="Dress">ドレス</option>
+                            <option value="Kimono">着物</option>
+                            <option value="Yukata">浴衣</option>
+                            <option value="School uniform">制服</option>
+                            <option value="Sportswear">スポーツウェア</option>
+                            <option value="Swimsuit">水着</option>
+                            <option value="Lingerie">ランジェリー</option>
+                            <option value="Gothic lolita">ゴスロリ</option>
+                            <option value="Steampunk fashion">スチームパンク</option>
+                            <option value="Cyberpunk fashion">サイバーパンク</option>
+                            <option value="Fantasy armor">ファンタジー鎧</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="clothing-color">服の色味</label>
+                        <select id="clothing-color" name="clothing-color">
+                            <option value="">選択してください</option>
+                            <option value="Red clothing">赤系</option>
+                            <option value="Blue clothing">青系</option>
+                            <option value="Green clothing">緑系</option>
+                            <option value="Yellow clothing">黄色系</option>
+                            <option value="Purple clothing">紫系</option>
+                            <option value="Pink clothing">ピンク系</option>
+                            <option value="Orange clothing">オレンジ系</option>
+                            <option value="Brown clothing">茶系</option>
+                            <option value="Black clothing">黒</option>
+                            <option value="White clothing">白</option>
+                            <option value="Gray clothing">グレー</option>
+                            <option value="Beige clothing">ベージュ</option>
+                            <option value="Pastel colored clothing">パステルカラー</option>
+                            <option value="Vivid colored clothing">ビビッドカラー</option>
+                            <option value="Monochrome clothing">モノクロ</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="clothing-pattern">服の柄</label>
+                        <select id="clothing-pattern" name="clothing-pattern">
+                            <option value="">選択してください</option>
+                            <option value="Solid color clothing">無地</option>
+                            <option value="Striped clothing">ストライプ</option>
+                            <option value="Checked clothing">チェック</option>
+                            <option value="Polka dot clothing">ドット</option>
+                            <option value="Floral pattern clothing">花柄</option>
+                            <option value="Animal print clothing">アニマル柄</option>
+                            <option value="Geometric pattern clothing">幾何学模様</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pose">ポーズ</label>
+                        <select id="pose" name="pose">
+                            <option value="">選択してください</option>
+                            <option value="Standing pose">立ちポーズ</option>
+                            <option value="Sitting pose">座りポーズ</option>
+                            <option value="Lying down pose">寝そべりポーズ</option>
+                            <option value="Walking pose">歩きポーズ</option>
+                            <option value="Running pose">走りポーズ</option>
+                            <option value="Looking at viewer">カメラ目線</option>
+                            <option value="Looking away">視線を外す</option>
+                            <option value="Hands on hips">腰に手を当てる</option>
+                            <option value="Arms crossed">腕を組む</option>
+                            <option value="Waving hand">手を振る</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="facial-expression">表情</label>
+                        <select id="facial-expression" name="facial-expression">
+                            <option value="">選択してください</option>
+                            <option value="Smiling face">笑顔</option>
+                            <option value="Laughing face">笑っている</option>
+                            <option value="Sad face">悲しい顔</option>
+                            <option value="Angry face">怒った顔</option>
+                            <option value="Surprised face">驚いた顔</option>
+                            <option value="Shy face">照れた顔</option>
+                            <option value="Serious face">真剣な顔</option>
+                            <option value="Neutral expression">無表情</option>
+                            <option value="Winking face">ウィンク</option>
+                            <option value="Kissing face">キス顔</option>
+                            <option value="Smirking face">生意気な笑み (Smirk)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="shoes">靴</label>
+                        <select id="shoes" name="shoes">
+                            <option value="">選択してください</option>
+                            <option value="Sneakers">スニーカー</option>
+                            <option value="High heels">ハイヒール</option>
+                            <option value="Boots">ブーツ</option>
+                            <option value="Sandals">サンダル</option>
+                            <option value="Loafers">ローファー</option>
+                            <option value="Barefoot">裸足</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section id="lighting-settings-tab" class="tab-content">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="lighting-conditions">照明条件</label>
+                        <select id="lighting-conditions" name="lighting-conditions">
+                            <option value="">選択してください</option>
+                            <option value="Natural light">自然光</option>
+                            <option value="Golden hour light">ゴールデンアワー (夕方の黄金色の光)</option>
+                            <option value="Blue hour light">ブルーアワー</option>
+                            <option value="Studio lighting">スタジオ照明</option>
+                            <option value="Softbox lighting">ソフトボックス照明</option>
+                            <option value="Dramatic lighting">ドラマチックな照明</option>
+                            <option value="Backlight">バックライト</option>
+                            <option value="Rim lighting">リムライト</option>
+                            <option value="Low-key lighting">ローキー照明</option>
+                            <option value="High-key lighting">ハイキー照明</option>
+                            <option value="Cinematic lighting">シネマティックライティング</option>
+                            <option value="Neon lighting">ネオンライト</option>
+                            <option value="Moonlight">月明かり</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="color-grading">カラーグレーディング</label>
+                        <select id="color-grading" name="color-grading">
+                            <option value="">選択してください</option>
+                            <option value="Warm color tone">暖色系</option>
+                            <option value="Cool color tone">寒色系</option>
+                            <option value="Monochromatic color grading">モノクロ</option>
+                            <option value="Sepia tone">セピア</option>
+                            <option value="Vibrant colors">鮮やかな色彩</option>
+                            <option value="Muted colors">落ち着いた色彩</option>
+                            <option value="High contrast">ハイコントラスト</option>
+                            <option value="Low contrast">ローコントラスト</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="composition">構図</label>
+                        <select id="composition" name="composition">
+                            <option value="">選択してください</option>
+                            <option value="Full body shot">全身</option>
+                            <option value="Upper body shot">上半身</option>
+                            <option value="Close-up shot">クローズアップ (顔)</option>
+                            <option value="Extreme close-up shot">エクストリームクローズアップ (目など)</option>
+                            <option value="Cowboy shot">カウボーイショット (太ももまで)</option>
+                            <option value="Low angle shot">ローアングル</option>
+                            <option value="High angle shot">ハイアングル</option>
+                            <option value="Eye-level shot">アイレベル</option>
+                            <option value="Dutch angle">ダッチアングル</option>
+                            <option value="Rule of thirds composition">三分割法</option>
+                            <option value="Centered composition">日の丸構図</option>
+                            <option value="character_sheet_views_expressions">キャラクター設定</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section id="shooting-environment-tab" class="tab-content">
+                <div class="form-grid">
+                     <div class="form-group">
+                        <label for="background-setting">背景</label>
+                        <select id="background-setting" name="background-setting">
+                            <option value="">選択してください</option>
+                            <option value="Forest setting">森の設定</option>
+                            <option value="Cityscape background">街並み</option>
+                            <option value="Beach background">ビーチ</option>
+                            <option value="Mountain background">山</option>
+                            <option value="Indoor room background">屋内 (部屋)</option>
+                            <option value="Cafe background">カフェ</option>
+                            <option value="School background">学校</option>
+                            <option value="Sci-fi background">SF的な背景</option>
+                            <option value="Fantasy landscape">ファンタジーな風景</option>
+                            <option value="Plain white background">白ホリ</option>
+                            <option value="Blurred background (bokeh)">背景ぼかし (ボケ)</option>
+                            <option value="Ruins background">廃墟</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="time-of-day">時間帯</label>
+                        <select id="time-of-day" name="time-of-day">
+                            <option value="">選択してください</option>
+                            <option value="Daytime">昼</option>
+                            <option value="Morning">朝</option>
+                            <option value="Afternoon">午後</option>
+                            <option value="Evening">夕方</option>
+                            <option value="Night">夜</option>
+                            <option value="Golden hour">ゴールデンアワー</option>
+                            <option value="Blue hour">ブルーアワー</option>
+                            <option value="Twilight">トワイライト</option>
+                            <option value="Midnight">深夜</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="overall-atmosphere">全体的な雰囲気</label>
+                        <select id="overall-atmosphere" name="overall-atmosphere">
+                            <option value="">選択してください</option>
+                            <option value="Bright atmosphere">明るい雰囲気</option>
+                            <option value="Dark atmosphere">暗い雰囲気</option>
+                            <option value="Romantic atmosphere">ロマンチック</option>
+                            <option value="Mysterious atmosphere">ミステリアス</option>
+                            <option value="Nostalgic atmosphere">ノスタルジック</option>
+                            <option value="Futuristic atmosphere">未来的</option>
+                            <option value="Peaceful atmosphere">穏やか</option>
+                            <option value="Energetic atmosphere">エネルギッシュ</option>
+                            <option value="Dreamy atmosphere">夢のような</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="season">季節感</label>
+                        <select id="season" name="season">
+                            <option value="">選択してください</option>
+                            <option value="Spring season">春</option>
+                            <option value="Summer season">夏</option>
+                            <option value="Autumn season">秋</option>
+                            <option value="Winter season">冬</option>
+                            <option value="Cherry blossoms season">桜の季節</option>
+                            <option value="Rainy season">梅雨</option>
+                            <option value="Fall foliage season">紅葉の季節</option>
+                            <option value="Snowy season">雪景色</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section id="additional-settings-tab" class="tab-content">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="rendering-quality">レンダリング品質</label>
+                        <select id="rendering-quality" name="rendering-quality">
+                            <option value="">選択してください</option>
+                            <option value="Masterpiece quality">最高品質 (Masterpiece)</option>
+                            <option value="High quality">高品質 (High Quality)</option>
+                            <option value="Standard quality">標準品質 (Standard)</option>
+                            <option value="Sketch quality">スケッチ風</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="aspect-ratio">アスペクト比</label>
+                        <select id="aspect-ratio" name="aspect-ratio">
+                            <option value="">選択してください</option>
+                            <option value="16:9 aspect ratio">16:9 (横長ワイド)</option>
+                            <option value="9:16 aspect ratio">9:16 (縦長ポートレート)</option>
+                            <option value="1:1 aspect ratio">1:1 (正方形)</option>
+                            <option value="4:3 aspect ratio">4:3 (標準)</option>
+                            <option value="3:2 aspect ratio">3:2 (写真標準)</option>
+                            <option value="21:9 aspect ratio">21:9 (シネマスコープ)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group full-width-group">
+                    <label for="free-text-prompt">自由記述 (プロンプトの要素や調整)</label>
+                    <textarea id="free-text-prompt" name="free-text-prompt" rows="4" placeholder="例: 「青い蝶が舞う幻想的な森の中で、白いドレスを着て微笑むエルフの女性。髪には花飾り。背景は少しぼかして被写体を際立たせる。」または「cyberpunk, neon lights, rainy street, detailed reflections」など"></textarea>
+                </div>
+            </section>
+            <section id="tenpure-tab" class="tab-content">
+                <p><strong>テンプレを選択:</strong> 設定と自由記述を自動入力します。</p>
+                <div id="template-buttons-container" class="template-buttons-grid">
+                    <!-- Template buttons will be injected here by JS -->
+                </div>
+                <hr class="section-divider">
+                
+                <p><strong>外部プロンプト読込と要素分解:</strong></p>
+                <div id="prompt-conversion-input-container">
+                    <label for="prompt-to-convert-input">ここに日本語プロンプトを貼り付けるか、下のボタンから画像を読み込んでください:</label>
+                    <div class="image-load-controls">
+                        <input type="file" id="image-file-input" accept="image/*" style="display: none;">
+                        <button id="load-image-and-deconstruct-button" type="button" class="secondary-button">画像から読込＆要素分解</button>
+                    </div>
+                    <textarea id="prompt-to-convert-input" rows="3" placeholder="画像から読み込むと、ここに解析された説明文が一時的に表示されます..."></textarea>
+                    <button id="execute-text-conversion-button" class="primary-button">入力テキストを要素分解</button>
+                    <p class="small-note">「画像から読込」の場合、画像解析後、自動的に要素分解が実行されます。<br>「入力テキストを要素分解」は、上のテキストエリアの内容を手動で分解する場合に使用します。<br>分解後、各項目が自動設定され、設定されなかった要素は「追加設定」タブの「自由記述」欄に入力されます。</p>
+                </div>
+            </section>
+            <section id="all-in-one-tab" class="tab-content">
+                <div class="form-group full-width-group">
+                    <label for="all-in-one-selected-tags-container" id="all-in-one-prompt-label">選択されたプロンプト (ドラッグで順番変更可):
+                         <span id="all-in-one-token-counter" class="small-note">Token (0/75)</span>
+                    </label>
+                    <div id="all-in-one-selected-tags-container" class="all-in-one-selected-tags-container" aria-live="polite" aria-label="Selected All-in-One Tags (English, reorderable)">
+                        <!-- Draggable English tag pills will be injected here -->
+                    </div>
+                    <div id="all-in-one-selected-tags-japanese" class="small-note">
+                        <!-- Comma-separated Japanese translation of selected tags -->
+                    </div>
+                </div>
+                <div class="all-in-one-actions-toolbar">
+                    <button id="copy-all-in-one-to-free-text" class="secondary-button">選択したタグを自由記述欄にコピー</button>
+                    <button id="all-in-one-random-button" class="secondary-button">ランダム</button>
+                    <button id="all-in-one-reset-button" class="secondary-button">リセット</button>
+                </div>
+                <hr class="section-divider">
+                <div id="all-in-one-dynamic-content-area" style="max-height: 500px; overflow-y: auto;">
+                    <p id="all-in-one-loading-message">タグデータを読込中...</p>
+                    <!-- Dynamically generated categories and tags will go here -->
+                </div>
+            </section>
+        </main>
+
+        <div id="action-buttons">
+            <button id="generate-prompt-button" type="button" class="primary-button">プロンプトを生成</button>
+            <button id="reset-button" type="button" class="secondary-button">リセット</button>
+            <button id="random-button" type="button" class="secondary-button" title="「テンプレ/読込」タブと「オールインワン」タブの内容はリセットされます">ランダム</button>
+        </div>
+
+        <div id="output-section">
+            <nav id="output-tabs-nav">
+                <button class="output-tab-button active" data-output-tab="standard">標準 (ImageFX等)</button>
+                <button class="output-tab-button" data-output-tab="midjourney">Midjourney用</button>
+                <button class="output-tab-button" data-output-tab="stablediffusion">StableDiffusion用</button>
+                <button id="yaml-code-button" class="output-tab-button" data-output-tab="yaml">YAML形式で表示</button>
+            </nav>
+            <div id="prompt-output-container">
+                <div>
+                    <label for="prompt-output-en">英語プロンプト (English Prompt)</label>
+                    <textarea id="prompt-output-en" name="prompt-output-en" rows="5" readonly placeholder="ここに英語のプロンプトが生成されます..."></textarea>
+                </div>
+                <div>
+                    <label for="prompt-output-ja" id="prompt-output-ja-label">日本語プロンプト (Japanese Translation)</label>
+                    <textarea id="prompt-output-ja" name="prompt-output-ja" rows="3" readonly placeholder="ここに日本語の翻訳が生成されます..."></textarea>
+                </div>
+                <button id="copy-prompt-button" type="button" class="secondary-button">英語プロンプトをコピー</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; AI Studio App. All rights reserved.</p>
+        </footer>
+    </div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
