@@ -1,0 +1,8 @@
+{
+  "name": "プロンプトジェネレータ",
+  "description": "高品質なAI画像生成プロンプトを作成するアプリケーション",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}

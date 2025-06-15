@@ -1,0 +1,677 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #1a1d21; /* Darker background */
+    color: #e0e0e0; /* Lighter default text */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+#app-container {
+    background-color: #2c3035; /* Dark container background */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Adjusted shadow for dark theme */
+    width: 100%;
+    max-width: 900px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #3a3f44; /* Darker border */
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: #a368ff; /* Lighter purple for better contrast on dark */
+    margin-bottom: 5px;
+    font-size: 2.2em;
+}
+
+header .subtitle {
+    color: #b0b8c0; /* Lighter subtitle text */
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+nav#main-tabs-nav, nav#output-tabs-nav {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center; /* Center the main tabs */
+}
+
+.tab-button, .output-tab-button {
+    padding: 12px 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #3a3f44; /* Darker tab background */
+    color: #c0c8d0; /* Lighter tab text */
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.tab-button:hover, .output-tab-button:hover {
+    background-color: #4a4f54;
+}
+
+.tab-button.active, .output-tab-button.active {
+    background-color: #8e2de2; /* Purple gradient part */
+    background-image: linear-gradient(to right, #8e2de2, #6a11cb); /* Adjusted gradient for dark */
+    color: white;
+    border-bottom: 3px solid #6a11cb; /* Adjusted border color */
+}
+
+#yaml-code-button {
+    /* Keeping it similar to other output tabs for consistency */
+}
+
+
+#tab-content-container {
+    padding: 20px;
+    border: 1px solid #3a3f44; /* Darker border */
+    border-radius: 8px;
+    margin-bottom: 25px;
+    background-color: #25282c; /* Slightly different dark for content */
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width-group {
+    grid-column: 1 / -1; /* Make this group span all columns in the grid */
+}
+
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #c0c8d0; /* Lighter label text */
+}
+
+.form-group select, .form-group textarea {
+    padding: 12px;
+    border: 1px solid #4a4f54; /* Darker border for select */
+    border-radius: 6px;
+    background-color: #3a3f44; /* Dark background for select */
+    font-size: 1em;
+    color: #e0e0e0; /* Light text for select */
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+.form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23c0c8d0' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E"); /* Light arrow */
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+
+.form-group select:focus, .form-group textarea:focus {
+    border-color: #8e2de2;
+    box-shadow: 0 0 0 0.2rem rgba(142, 45, 226, 0.35);
+    outline: none;
+}
+
+#action-buttons {
+    display: flex;
+    justify-content: center; /* Center main action buttons */
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button.primary-button {
+    background-color: #8e2de2;
+    background-image: linear-gradient(to right, #8e2de2, #6a11cb);
+    color: white;
+}
+
+button.primary-button:hover {
+    background-image: linear-gradient(to right, #6a11cb, #8e2de2);
+}
+
+button.primary-button:disabled {
+    background-color: #5a3d72; /* Darker disabled purple */
+    background-image: none;
+    color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+button.secondary-button {
+    background-color: #4a4f54;
+    color: #e0e0e0;
+}
+button.secondary-button:hover {
+    background-color: #5a5f64;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#output-section {
+    margin-top: 20px;
+}
+
+#prompt-output-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #3a3f44; /* Darker border */
+    border-radius: 8px;
+    background-color: #25282c; /* Darker background */
+}
+
+#prompt-output-container label {
+    font-weight: 500;
+    color: #c0c8d0;
+    margin-bottom: -2px; /* Adjust spacing */
+}
+
+#prompt-output-ja-label {
+    font-size: 0.9em; /* Smaller label for Japanese translation */
+    color: #b0b8c0; /* Slightly lighter/less prominent */
+}
+
+#prompt-output-en, #prompt-output-ja {
+    width: calc(100% - 24px); /* Account for padding */
+    padding: 12px;
+    border: 1px solid #4a4f54; /* Darker border */
+    border-radius: 6px;
+    font-size: 1em;
+    resize: vertical;
+    background-color: #3a3f44; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+#prompt-output-en {
+    min-height: 100px; /* Slightly more for primary output */
+}
+
+#prompt-output-ja {
+    font-size: 0.9em; /* Smaller text in textarea */
+    min-height: 60px; /* Reduced min-height for Japanese translation */
+}
+
+
+#copy-prompt-button {
+    align-self: flex-end;
+    width: auto;
+    min-width: 180px; /* Wider for longer text */
+}
+
+.template-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.template-button {
+    padding: 10px 15px;
+    border: 1px solid #4a4f54;
+    border-radius: 6px;
+    background-color: #3a3f44;
+    color: #c0c8d0;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.template-button:hover {
+    background-color: #4a4f54;
+    color: #e0e0e0;
+}
+
+/* Updated prompt conversion section styles */
+#prompt-conversion-input-container {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #4a4f54;
+    border-radius: 6px;
+    background-color: #3a3f44;
+}
+
+#prompt-conversion-input-container > label { /* Label directly under the container */
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.image-load-controls {
+    margin-bottom: 10px;
+}
+
+#load-image-and-deconstruct-button {
+    /* Uses .secondary-button styles by default if class is applied */
+    /* Add specific styles if needed */
+    margin-bottom: 5px; /* Spacing if textarea is directly after */
+}
+
+
+#prompt-to-convert-input {
+    width: calc(100% - 24px); /* Account for padding */
+    padding: 10px;
+    border: 1px solid #5a5f64;
+    border-radius: 4px;
+    background-color: #2c3035;
+    color: #e0e0e0;
+    font-size: 1em;
+    resize: vertical;
+    min-height: 60px;
+    margin-bottom: 10px;
+}
+
+#execute-text-conversion-button { /* Renamed from execute-conversion-button */
+    display: block; 
+    margin-top: 5px;
+}
+
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-color: #4a4f54;
+    margin: 25px 0;
+}
+
+.small-note {
+    font-size: 0.9em;
+    color: #a0a8b0;
+    margin-top: 8px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #3a3f44; /* Darker border */
+    font-size: 0.9em;
+    color: #888ea8; /* Lighter footer text */
+}
+
+/* Accessibility */
+[aria-hidden="true"] {
+    display: none !important;
+}
+
+/* Spinner for loading state */
+.spinner {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-bottom;
+    border: .2em solid currentColor; /* Will use button's text color which is light now */
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border .75s linear infinite;
+    margin-left: 5px;
+}
+
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
+}
+
+/* All-in-One Tab Styles */
+#all-in-one-prompt-label {
+    position: relative; /* For positioning the token counter */
+    display: block; /* Ensure it takes full width for float to work if used */
+}
+
+#all-in-one-token-counter {
+    float: right;
+    margin-top: 0; /* Adjust if it was previously spaced for being below */
+    margin-right: 5px; /* Align with the edge of the container below */
+    font-size: 0.85em;
+}
+
+#all-in-one-selected-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid #4a4f54;
+    border-radius: 6px;
+    background-color: #3a3f44;
+    min-height: 40px; /* Min height to show border even when empty */
+    margin-top: 5px; /* Space after the label */
+    margin-bottom: 5px; /* Space before Japanese translation or token counter */
+}
+
+#all-in-one-selected-tags-japanese {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding-left: 2px;
+    color: #b0b8c0; /* Lighter gray for JA translation */
+    font-size: 0.85em;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+
+
+.all-in-one-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    /* background-color: #8e2de2; Default, will be overridden */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px; /* More rounded for pill shape */
+    font-size: 0.9em;
+    cursor: grab;
+    transition: background-color 0.2s, background-image 0.2s;
+    user-select: none; /* Prevent text selection during drag */
+    border: 1px solid transparent; /* Base border */
+}
+
+.all-in-one-tag-pill.dragging {
+    opacity: 0.5;
+    /* background-color: #6a11cb; Default, will be overridden */
+}
+
+/* Pill colors based on main category */
+.pill-maincat-人物 { background-color: #6d28d9; border-color: #5b21b6;}
+.pill-maincat-人物.dragging { background-color: #5b21b6;}
+.pill-maincat-衣服や装飾品 { background-color: #0d9488; border-color: #0f766e;}
+.pill-maincat-衣服や装飾品.dragging { background-color: #0f766e;}
+.pill-maincat-表情動作 { background-color: #c2410c; border-color: #9a3412;}
+.pill-maincat-表情動作.dragging { background-color: #9a3412;}
+.pill-maincat-画面 { background-color: #0369a1; border-color: #075985;}
+.pill-maincat-画面.dragging { background-color: #075985;}
+.pill-maincat-環境 { background-color: #166534; border-color: #14532d;}
+.pill-maincat-環境.dragging { background-color: #14532d;}
+.pill-maincat-シーン { background-color: #4f46e5; border-color: #4338ca;}
+.pill-maincat-シーン.dragging { background-color: #4338ca;}
+.pill-maincat-レンズ { background-color: #be185d; border-color: #9d174d;}
+.pill-maincat-レンズ.dragging { background-color: #9d174d;}
+/* Fallback pill color if no category match (shouldn't happen if logic is correct) */
+.all-in-one-tag-pill:not([class*="pill-maincat-"]) { background-color: #8e2de2; border-color: #7a28cb;}
+.all-in-one-tag-pill:not([class*="pill-maincat-"]).dragging { background-color: #7a28cb;}
+
+
+.all-in-one-tag-pill-delete {
+    margin-left: 8px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.1em; /* Make X slightly larger */
+    cursor: pointer;
+    padding: 0 3px;
+    line-height: 1; /* Ensure X is vertically centered */
+}
+.all-in-one-tag-pill-delete:hover {
+    color: #ffdddd; /* Lighter color on hover */
+}
+
+.all-in-one-actions-toolbar {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center; /* Center the buttons */
+    flex-wrap: wrap;
+}
+
+.all-in-one-actions-toolbar button {
+    flex-grow: 1; /* Allow buttons to grow */
+    min-width: 150px; /* Minimum width before wrapping */
+}
+
+
+#all-in-one-tab .main-category-section {
+    margin-bottom: 20px;
+}
+
+#all-in-one-tab .main-category-title {
+    font-size: 1.4em; /* Slightly reduced */
+    color: #b388ff; /* Adjusted purple */
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #4a4f54; /* Consistent border */
+}
+
+#all-in-one-tab details {
+    margin-bottom: 10px;
+    background-color: #33373c;
+    border-radius: 6px;
+    border: 1px solid #40454a; /* Subtle border for details */
+}
+
+#all-in-one-tab summary {
+    padding: 12px 15px; /* Increased padding */
+    cursor: pointer;
+    font-weight: 500; /* Normal weight for less emphasis */
+    color: #d0d8e0; /* Slightly brighter text */
+    background-color: #3a3f44;
+    border-radius: 6px; /* Apply to summary for when details is closed */
+    transition: background-color 0.2s;
+    list-style-type: disclosure-closed; /* Default marker */
+}
+#all-in-one-tab details[open] summary {
+    border-radius: 6px 6px 0 0; /* Adjust radius when open */
+    border-bottom: 1px solid #4a4f54;
+    list-style-type: disclosure-open; /* Open marker */
+}
+
+
+#all-in-one-tab summary:hover {
+    background-color: #454a4f;
+}
+
+#all-in-one-tab .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 15px; /* Increased padding */
+    background-color: #2c3035; /* Match app container bg for contrast */
+    border-radius: 0 0 6px 6px; /* Round bottom corners when details is open */
+}
+
+#all-in-one-tab .tag-item-button {
+    padding: 8px 12px; 
+    font-size: 0.9em;
+    /* background-color: #4a4f54; Default, will be overridden by category */
+    color: #e0e0e0; 
+    border: 1px solid transparent; /* Make border transparent by default, category can add */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s, background-image 0.2s;
+    text-align: left; 
+    min-width: 80px; /* Ensure buttons have some min width for Japanese text */
+    word-break: keep-all; /* Try to prevent breaking Japanese words */
+}
+
+
+/* Category-specific tag button colors */
+/* 人物 - Purple */
+#all-in-one-tab .tag-button-maincat-人物 { background-color: #6d28d9; border-color: #5b21b6;}
+#all-in-one-tab .tag-button-maincat-人物.selected { background-image: linear-gradient(to right, #8b5cf6, #6d28d9); border-color: #5b21b6; color:white; }
+#all-in-one-tab .tag-button-maincat-人物:not(.selected):hover { background-color: #5b21b6; }
+
+/* 衣服や装飾品 - Teal */
+#all-in-one-tab .tag-button-maincat-衣服や装飾品 { background-color: #0d9488; border-color: #0f766e;}
+#all-in-one-tab .tag-button-maincat-衣服や装飾品.selected { background-image: linear-gradient(to right, #14b8a6, #0d9488); border-color: #0f766e; color:white;}
+#all-in-one-tab .tag-button-maincat-衣服や装飾品:not(.selected):hover { background-color: #0f766e; }
+
+/* 表情動作 - Orange-Brown */
+#all-in-one-tab .tag-button-maincat-表情動作 { background-color: #c2410c; border-color: #9a3412;}
+#all-in-one-tab .tag-button-maincat-表情動作.selected { background-image: linear-gradient(to right, #f97316, #c2410c); border-color: #9a3412; color:white;}
+#all-in-one-tab .tag-button-maincat-表情動作:not(.selected):hover { background-color: #9a3412; }
+
+/* 画面 - Blue */
+#all-in-one-tab .tag-button-maincat-画面 { background-color: #0369a1; border-color: #075985;}
+#all-in-one-tab .tag-button-maincat-画面.selected { background-image: linear-gradient(to right, #0ea5e9, #0369a1); border-color: #075985; color:white;}
+#all-in-one-tab .tag-button-maincat-画面:not(.selected):hover { background-color: #075985; }
+
+/* 環境 - Green */
+#all-in-one-tab .tag-button-maincat-環境 { background-color: #166534; border-color: #14532d;}
+#all-in-one-tab .tag-button-maincat-環境.selected { background-image: linear-gradient(to right, #22c55e, #166534); border-color: #14532d; color:white;}
+#all-in-one-tab .tag-button-maincat-環境:not(.selected):hover { background-color: #14532d; }
+
+/* シーン - Darker Purple / Indigo */
+#all-in-one-tab .tag-button-maincat-シーン { background-color: #4f46e5; border-color: #4338ca;} /* Indigo */
+#all-in-one-tab .tag-button-maincat-シーン.selected { background-image: linear-gradient(to right, #6366f1, #4f46e5); border-color: #4338ca; color:white;}
+#all-in-one-tab .tag-button-maincat-シーン:not(.selected):hover { background-color: #4338ca; }
+
+/* レンズ - Pink-Red */
+#all-in-one-tab .tag-button-maincat-レンズ { background-color: #be185d; border-color: #9d174d;}
+#all-in-one-tab .tag-button-maincat-レンズ.selected { background-image: linear-gradient(to right, #ec4899, #be185d); border-color: #9d174d; color:white;}
+#all-in-one-tab .tag-button-maincat-レンズ:not(.selected):hover { background-color: #9d174d; }
+
+/* Default for unstyled categories or fallback */
+#all-in-one-tab .tag-item-button:not([class*="tag-button-maincat-"]) {
+    background-color: #4a4f54; 
+    border-color: #5a5f64;
+}
+#all-in-one-tab .tag-item-button:not([class*="tag-button-maincat-"]):hover {
+    background-color: #5a5f64;
+    border-color: #7a7f84; 
+}
+#all-in-one-tab .tag-item-button:not([class*="tag-button-maincat-"]).selected {
+    background-color: #8e2de2; 
+    background-image: linear-gradient(to right, #8e2de2, #7a28cb);
+    color: white;
+    border-color: #6a11cb;
+    font-weight: 500;
+}
+
+
+#all-in-one-tab #all-in-one-loading-message {
+    color: #b0b8c0;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    #app-container {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    header .subtitle {
+        font-size: 1em;
+    }
+    .form-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+    .tab-button, .output-tab-button, button {
+        font-size: 0.95em;
+        padding: 10px 15px;
+    }
+    #action-buttons button {
+        /* width: 100%; Removed to allow wrap with gap */
+    }
+    #copy-prompt-button {
+      /* width: 100%; Removed to allow natural width */
+        margin-top: 5px;
+    }
+    .template-buttons-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .image-load-controls {
+        display: flex;
+        flex-direction: column; /* Stack button on smaller screens if needed */
+    }
+    #load-image-and-deconstruct-button, #execute-text-conversion-button {
+        width: 100%; /* Make buttons full width in this section on mobile */
+    }
+    #load-image-and-deconstruct-button {
+        margin-bottom: 10px;
+    }
+    
+    .all-in-one-actions-toolbar {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+    .all-in-one-actions-toolbar button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .all-in-one-actions-toolbar button:last-child {
+        margin-bottom: 0;
+    }
+
+    #all-in-one-tab .main-category-title {
+        font-size: 1.2em;
+    }
+    #all-in-one-tab summary {
+        padding: 10px;
+    }
+    #all-in-one-tab .tags-container {
+        padding: 10px;
+    }
+    #all-in-one-tab .tag-item-button {
+        padding: 6px 10px;
+    }
+    .all-in-one-tag-pill {
+        font-size: 0.85em;
+        padding: 4px 8px;
+    }
+     #all-in-one-token-counter {
+        display: block; /* Ensure it takes full width on mobile */
+        float: none;
+        text-align: right;
+        margin-top: 5px;
+    }
+    #all-in-one-prompt-label {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
